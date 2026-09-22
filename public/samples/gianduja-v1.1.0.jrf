@@ -1,0 +1,798 @@
+{
+  "format": "ajinomotrix-protocol-version",
+  "version": "1.0",
+  "exported_at": "2026-08-08T22:29:26.806Z",
+  "protocol": {
+    "name": "Gianduja",
+    "description": "",
+    "version": {
+      "version": "1.1.0",
+      "major": 1,
+      "minor": 1,
+      "patch": 0,
+      "status": "draft",
+      "change_message": "Recipe import",
+      "mp6_context": {
+        "cultural_profile_names": []
+      },
+      "graph": {
+        "nodes": [
+          {
+            "payload": {
+              "label": "Water",
+              "position_x": 100,
+              "position_y": 400,
+              "quantity": 40,
+              "unit": "g"
+            },
+            "type": "ingredient"
+          },
+          {
+            "payload": {
+              "label": "Vanilla extract",
+              "position_x": 100,
+              "position_y": 1000,
+              "quantity": 3,
+              "unit": "g"
+            },
+            "type": "ingredient"
+          },
+          {
+            "payload": {
+              "label": "Fine salt",
+              "position_x": 100,
+              "position_y": 850,
+              "quantity": 2,
+              "unit": "g"
+            },
+            "type": "ingredient"
+          },
+          {
+            "payload": {
+              "label": "Piedmont IGP hazelnuts",
+              "position_x": 100,
+              "position_y": 100,
+              "quantity": 250,
+              "unit": "g"
+            },
+            "type": "ingredient"
+          },
+          {
+            "payload": {
+              "category": "equipment",
+              "label": "Oven",
+              "position_x": 450,
+              "position_y": 650,
+              "prepSteps": [
+                {
+                  "label": "Preheat oven",
+                  "targetTemperatureC": 150,
+                  "type": "thermal"
+                }
+              ],
+              "role": "environment"
+            },
+            "type": "material"
+          },
+          {
+            "payload": {
+              "category": "cookware",
+              "label": "Sheet pan + Silpat",
+              "materialType": "silicone",
+              "position_x": 670,
+              "position_y": 650,
+              "role": "contact"
+            },
+            "type": "material"
+          },
+          {
+            "payload": {
+              "category": "cookware",
+              "label": "Bain-marie",
+              "materialType": "stainless steel",
+              "position_x": 450,
+              "position_y": 650,
+              "prepSteps": [
+                {
+                  "label": "Prepare bain-marie",
+                  "targetTemperatureC": 50,
+                  "type": "thermal"
+                }
+              ],
+              "role": "environment"
+            },
+            "type": "material"
+          },
+          {
+            "payload": {
+              "category": "surface",
+              "label": "Marble tempering slab",
+              "materialType": "marble",
+              "position_x": 2550,
+              "position_y": 650,
+              "role": "contact"
+            },
+            "type": "material"
+          },
+          {
+            "payload": {
+              "category": "utensil",
+              "label": "Offset spatula",
+              "position_x": 3164,
+              "position_y": 628,
+              "role": "tool"
+            },
+            "type": "material"
+          },
+          {
+            "duration_s": 900,
+            "payload": {
+              "duration": 900,
+              "equipmentParams": {
+                "synced": true,
+                "temperature": 150
+              },
+              "label": "Roast",
+              "parameters": {
+                "description": "Roast hazelnuts at 150°C for 12-15 min — skins cracking, uniform golden color"
+              },
+              "position_x": 450,
+              "position_y": 100,
+              "processEvents": [
+                {
+                  "label": "Start",
+                  "timeOffset": 0,
+                  "type": "START"
+                },
+                {
+                  "ingredientName": "Piedmont IGP hazelnuts",
+                  "name": "Piedmont IGP hazelnuts",
+                  "quantity": 250,
+                  "timeOffset": 0,
+                  "type": "INGREDIENT",
+                  "unit": "g"
+                },
+                {
+                  "label": "End",
+                  "timeOffset": 900,
+                  "type": "END"
+                }
+              ],
+              "temperature": 150
+            },
+            "type": "process"
+          },
+          {
+            "duration_s": 300,
+            "payload": {
+              "duration": 300,
+              "label": "Skin",
+              "parameters": {
+                "description": "Rub warm hazelnuts in a towel to remove skins, sieve to separate"
+              },
+              "position_x": 800,
+              "position_y": 100,
+              "processEvents": [
+                {
+                  "label": "Start",
+                  "timeOffset": 0,
+                  "type": "START"
+                },
+                {
+                  "label": "End",
+                  "timeOffset": 300,
+                  "type": "END"
+                }
+              ]
+            },
+            "type": "process"
+          },
+          {
+            "duration_s": 120,
+            "payload": {
+              "duration": 120,
+              "label": "Crush",
+              "parameters": {
+                "description": "Break hardened praline into rough pieces with rolling pin"
+              },
+              "position_x": 1500,
+              "position_y": 100,
+              "processEvents": [
+                {
+                  "label": "Start",
+                  "timeOffset": 0,
+                  "type": "START"
+                },
+                {
+                  "label": "End",
+                  "timeOffset": 120,
+                  "type": "END"
+                }
+              ]
+            },
+            "type": "process"
+          },
+          {
+            "duration_s": 1200,
+            "payload": {
+              "duration": 1200,
+              "label": "Grind",
+              "parameters": {
+                "description": "Grind in food processor or ball mill until smooth paste — hazelnut oils must release (15-20 min)"
+              },
+              "position_x": 1850,
+              "position_y": 100,
+              "processEvents": [
+                {
+                  "label": "Start",
+                  "timeOffset": 0,
+                  "type": "START"
+                },
+                {
+                  "label": "End",
+                  "timeOffset": 1200,
+                  "type": "END"
+                }
+              ],
+              "speed": 1200
+            },
+            "type": "process"
+          },
+          {
+            "duration_s": 300,
+            "payload": {
+              "duration": 300,
+              "label": "Mix",
+              "parameters": {
+                "description": "Incorporate melted chocolate into warm praline paste, add melted cocoa butter, salt and vanilla — mix until fully homogeneous"
+              },
+              "position_x": 2200,
+              "position_y": 100,
+              "processEvents": [
+                {
+                  "label": "Start",
+                  "timeOffset": 0,
+                  "type": "START"
+                },
+                {
+                  "ingredientName": "Cocoa butter",
+                  "name": "Cocoa butter",
+                  "quantity": 15,
+                  "timeOffset": 0,
+                  "type": "INGREDIENT",
+                  "unit": "g"
+                },
+                {
+                  "ingredientName": "Fine salt",
+                  "name": "Fine salt",
+                  "quantity": 2,
+                  "timeOffset": 0,
+                  "type": "INGREDIENT",
+                  "unit": "g"
+                },
+                {
+                  "ingredientName": "Vanilla extract",
+                  "name": "Vanilla extract",
+                  "quantity": 3,
+                  "timeOffset": 0,
+                  "type": "INGREDIENT",
+                  "unit": "g"
+                },
+                {
+                  "label": "End",
+                  "timeOffset": 300,
+                  "type": "END"
+                }
+              ],
+              "temperature": 40
+            },
+            "type": "process"
+          },
+          {
+            "duration_s": 600,
+            "payload": {
+              "duration": 600,
+              "label": "Table",
+              "parameters": {
+                "description": "Table the gianduja on marble: spread and gather to pre-crystallize — work at 26-28°C",
+                "technique": "marble tabling"
+              },
+              "position_x": 2550,
+              "position_y": 100,
+              "processEvents": [
+                {
+                  "label": "Start",
+                  "timeOffset": 0,
+                  "type": "START"
+                },
+                {
+                  "label": "End",
+                  "timeOffset": 600,
+                  "type": "END"
+                }
+              ],
+              "temperature": 26
+            },
+            "type": "process"
+          },
+          {
+            "payload": {
+              "label": "Milk couverture chocolate 40%",
+              "position_x": 100,
+              "position_y": 550,
+              "quantity": 200,
+              "unit": "g"
+            },
+            "type": "ingredient"
+          },
+          {
+            "payload": {
+              "label": "Caster sugar",
+              "position_x": 100,
+              "position_y": 250,
+              "quantity": 125,
+              "unit": "g"
+            },
+            "type": "ingredient"
+          },
+          {
+            "payload": {
+              "label": "Cocoa butter",
+              "position_x": 100,
+              "position_y": 700,
+              "quantity": 15,
+              "unit": "g"
+            },
+            "type": "ingredient"
+          },
+          {
+            "payload": {
+              "category": "cookware",
+              "label": "Copper saucepan",
+              "materialType": "copper",
+              "position_x": 450,
+              "position_y": 650,
+              "role": "contact"
+            },
+            "type": "material"
+          },
+          {
+            "payload": {
+              "category": "equipment",
+              "label": "Food processor / Grinder",
+              "position_x": 1850,
+              "position_y": 650,
+              "role": "tool"
+            },
+            "type": "material"
+          },
+          {
+            "payload": {
+              "category": "molding",
+              "label": "Stainless steel frame",
+              "materialType": "stainless steel",
+              "position_x": 2900,
+              "position_y": 650,
+              "role": "contact"
+            },
+            "type": "material"
+          },
+          {
+            "duration_s": 600,
+            "payload": {
+              "duration": 600,
+              "label": "Cook caramel",
+              "parameters": {
+                "description": "Make caramel: water + sugar, cook to 185°C without stirring — light amber",
+                "technique": "wet caramel"
+              },
+              "position_x": 450,
+              "position_y": 250,
+              "processEvents": [
+                {
+                  "label": "Start",
+                  "timeOffset": 0,
+                  "type": "START"
+                },
+                {
+                  "ingredientName": "Caster sugar",
+                  "name": "Caster sugar",
+                  "quantity": 125,
+                  "timeOffset": 0,
+                  "type": "INGREDIENT",
+                  "unit": "g"
+                },
+                {
+                  "ingredientName": "Water",
+                  "name": "Water",
+                  "quantity": 40,
+                  "timeOffset": 0,
+                  "type": "INGREDIENT",
+                  "unit": "g"
+                },
+                {
+                  "label": "End",
+                  "timeOffset": 600,
+                  "type": "END"
+                }
+              ],
+              "temperature": 185
+            },
+            "type": "process"
+          },
+          {
+            "duration_s": 60,
+            "payload": {
+              "duration": 60,
+              "label": "Pour",
+              "parameters": {
+                "description": "Pour hot caramel over skinned hazelnuts on Silpat — cool completely"
+              },
+              "position_x": 1150,
+              "position_y": 100,
+              "processEvents": [
+                {
+                  "label": "Start",
+                  "timeOffset": 0,
+                  "type": "START"
+                },
+                {
+                  "label": "End",
+                  "timeOffset": 60,
+                  "type": "END"
+                }
+              ]
+            },
+            "type": "process"
+          },
+          {
+            "duration_s": 300,
+            "payload": {
+              "duration": 300,
+              "equipmentParams": {
+                "synced": true,
+                "temperature": 50
+              },
+              "label": "Melt",
+              "parameters": {
+                "description": "Melt milk couverture over bain-marie at 40-45°C — do not exceed 50°C"
+              },
+              "position_x": 450,
+              "position_y": 400,
+              "processEvents": [
+                {
+                  "label": "Start",
+                  "timeOffset": 0,
+                  "type": "START"
+                },
+                {
+                  "ingredientName": "Milk couverture chocolate 40%",
+                  "name": "Milk couverture chocolate 40%",
+                  "quantity": 200,
+                  "timeOffset": 0,
+                  "type": "INGREDIENT",
+                  "unit": "g"
+                },
+                {
+                  "label": "End",
+                  "timeOffset": 300,
+                  "type": "END"
+                }
+              ],
+              "temperature": 45
+            },
+            "type": "process"
+          },
+          {
+            "duration_s": 180,
+            "payload": {
+              "duration": 180,
+              "label": "Mold",
+              "parameters": {
+                "description": "Pour into frame or mold into shapes — smooth with offset spatula"
+              },
+              "position_x": 2900,
+              "position_y": 100,
+              "processEvents": [
+                {
+                  "label": "Start",
+                  "timeOffset": 0,
+                  "type": "START"
+                },
+                {
+                  "label": "End",
+                  "timeOffset": 180,
+                  "type": "END"
+                }
+              ],
+              "temperature": 27
+            },
+            "type": "process"
+          },
+          {
+            "duration_s": 28800,
+            "payload": {
+              "duration": 28800,
+              "label": "Crystallize",
+              "parameters": {
+                "description": "Crystallize at 16°C minimum 8h — should be firm yet supple at room temperature"
+              },
+              "position_x": 3250,
+              "position_y": 100,
+              "processEvents": [
+                {
+                  "label": "Start",
+                  "timeOffset": 0,
+                  "type": "START"
+                },
+                {
+                  "label": "End",
+                  "timeOffset": 28800,
+                  "type": "END"
+                }
+              ],
+              "temperature": 16
+            },
+            "type": "process"
+          },
+          {
+            "payload": {
+              "label": "Hazelnut gianduja",
+              "position_x": 3600,
+              "position_y": 100,
+              "title": "Hazelnut gianduja"
+            },
+            "type": "serve"
+          }
+        ],
+        "edges": [
+          {
+            "source_index": 18,
+            "target_index": 21,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "top-source",
+              "targetHandle": "bottom-target"
+            }
+          },
+          {
+            "source_index": 6,
+            "target_index": 23,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "top-source",
+              "targetHandle": "bottom-target"
+            }
+          },
+          {
+            "source_index": 8,
+            "target_index": 24,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "top-source",
+              "targetHandle": "bottom-target"
+            }
+          },
+          {
+            "source_index": 21,
+            "target_index": 22,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 11,
+            "target_index": 12,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 12,
+            "target_index": 13,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 23,
+            "target_index": 13,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 17,
+            "target_index": 13,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 2,
+            "target_index": 13,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 1,
+            "target_index": 13,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 13,
+            "target_index": 14,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 14,
+            "target_index": 24,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 24,
+            "target_index": 25,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 5,
+            "target_index": 22,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "top-source",
+              "targetHandle": "bottom-target"
+            }
+          },
+          {
+            "source_index": 19,
+            "target_index": 12,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "top-source",
+              "targetHandle": "bottom-target"
+            }
+          },
+          {
+            "source_index": 7,
+            "target_index": 14,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "top-source",
+              "targetHandle": "bottom-target"
+            }
+          },
+          {
+            "source_index": 20,
+            "target_index": 24,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "top-source",
+              "targetHandle": "bottom-target"
+            }
+          },
+          {
+            "source_index": 3,
+            "target_index": 9,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 9,
+            "target_index": 10,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 16,
+            "target_index": 21,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 0,
+            "target_index": 21,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 10,
+            "target_index": 22,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 22,
+            "target_index": 11,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 15,
+            "target_index": 23,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 25,
+            "target_index": 26,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 4,
+            "target_index": 9,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "top-source",
+              "targetHandle": "bottom-target"
+            }
+          },
+          {
+            "source_index": 5,
+            "target_index": 9,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "top-source",
+              "targetHandle": "bottom-target"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "public_demo": true,
+  "public_demo_note": "Sanitized public demonstration fixture; internal database identifiers and dependency references removed."
+}

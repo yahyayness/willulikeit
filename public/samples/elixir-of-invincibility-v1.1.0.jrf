@@ -1,0 +1,599 @@
+{
+  "format": "ajinomotrix-protocol-version",
+  "version": "1.0",
+  "exported_at": "2026-08-24T22:30:04.710Z",
+  "protocol": {
+    "name": "Elixir of Invincibility (Imported)",
+    "description": "A fermented citrus, honey, water, ginger and herb tonic used as a Predictive Cuisine demonstration recipe.",
+    "version": {
+      "version": "1.1.0",
+      "major": 1,
+      "minor": 1,
+      "patch": 0,
+      "status": "draft",
+      "change_message": "Extracted with Ajinoverse Recipe Extractor",
+      "mp6_context": {
+        "cultural_profile_names": []
+      },
+      "graph": {
+        "nodes": [
+          {
+            "payload": {
+              "label": "citrus",
+              "position_x": 62.01248680836005,
+              "position_y": 96.91993136284,
+              "quantity": 2,
+              "unit": "pcs"
+            },
+            "type": "ingredient"
+          },
+          {
+            "payload": {
+              "label": "honey",
+              "position_x": 100,
+              "position_y": 250,
+              "quantity": 20,
+              "unit": "g"
+            },
+            "type": "ingredient"
+          },
+          {
+            "payload": {
+              "label": "water",
+              "position_x": 100,
+              "position_y": 400,
+              "quantity": 30,
+              "unit": "g"
+            },
+            "type": "ingredient"
+          },
+          {
+            "payload": {
+              "label": "ginger",
+              "position_x": 91.78648363424,
+              "position_y": 551.0266895457199,
+              "quantity": 25,
+              "unit": "g"
+            },
+            "type": "ingredient"
+          },
+          {
+            "payload": {
+              "label": "herbs",
+              "position_x": 101.02668954571999,
+              "position_y": 700,
+              "quantity": 10,
+              "unit": "g"
+            },
+            "type": "ingredient"
+          },
+          {
+            "payload": {
+              "category": "equipment",
+              "label": "Cutting board",
+              "position_x": 450,
+              "position_y": 650,
+              "prepSteps": [],
+              "role": "contact"
+            },
+            "type": "material"
+          },
+          {
+            "payload": {
+              "category": "equipment",
+              "label": "Knife",
+              "position_x": 678.9517686955598,
+              "position_y": 659.24020591148,
+              "prepSteps": [],
+              "role": "tool"
+            },
+            "type": "material"
+          },
+          {
+            "payload": {
+              "category": "equipment",
+              "label": "Glass jar",
+              "position_x": 1150,
+              "position_y": 650,
+              "prepSteps": [
+                {
+                  "label": "Sterilize jar",
+                  "type": "thermal"
+                }
+              ],
+              "role": "contact"
+            },
+            "type": "material"
+          },
+          {
+            "payload": {
+              "category": "equipment",
+              "label": "Stirring spoon",
+              "position_x": 1398.4588700642398,
+              "position_y": 687.98751319164,
+              "prepSteps": [],
+              "role": "tool"
+            },
+            "type": "material"
+          },
+          {
+            "payload": {
+              "category": "equipment",
+              "label": "Fine mesh strainer",
+              "position_x": 1850,
+              "position_y": 650,
+              "prepSteps": [],
+              "role": "tool"
+            },
+            "type": "material"
+          },
+          {
+            "payload": {
+              "category": "equipment",
+              "label": "Cheesecloth",
+              "position_x": 1850,
+              "position_y": 650,
+              "prepSteps": [],
+              "role": "tool"
+            },
+            "type": "material"
+          },
+          {
+            "payload": {
+              "category": "equipment",
+              "label": "Storage bottle",
+              "position_x": 1850,
+              "position_y": 650,
+              "prepSteps": [
+                {
+                  "label": "Sterilize bottle",
+                  "type": "thermal"
+                }
+              ],
+              "role": "contact"
+            },
+            "type": "material"
+          },
+          {
+            "duration_s": 0,
+            "payload": {
+              "duration": 0,
+              "label": "Prepare citrus",
+              "parameters": {
+                "description": "Wash and slice or juice the citrus, removing any seeds."
+              },
+              "position_x": 450,
+              "position_y": 100,
+              "processEvents": [
+                {
+                  "label": "Start",
+                  "timeOffset": 0,
+                  "type": "START"
+                },
+                {
+                  "ingredientName": "citrus",
+                  "name": "citrus",
+                  "quantity": 2,
+                  "timeOffset": 0,
+                  "type": "INGREDIENT",
+                  "unit": "g"
+                },
+                {
+                  "label": "End",
+                  "timeOffset": 0,
+                  "type": "END"
+                }
+              ]
+            },
+            "type": "process"
+          },
+          {
+            "duration_s": 0,
+            "payload": {
+              "duration": 0,
+              "label": "Prepare ginger",
+              "parameters": {
+                "description": "Peel and thinly slice or grate the ginger."
+              },
+              "position_x": 800,
+              "position_y": 100,
+              "processEvents": [
+                {
+                  "label": "Start",
+                  "timeOffset": 0,
+                  "type": "START"
+                },
+                {
+                  "ingredientName": "ginger",
+                  "name": "ginger",
+                  "quantity": 25,
+                  "timeOffset": 0,
+                  "type": "INGREDIENT",
+                  "unit": "g"
+                },
+                {
+                  "label": "End",
+                  "timeOffset": 0,
+                  "type": "END"
+                }
+              ]
+            },
+            "type": "process"
+          },
+          {
+            "duration_s": 0,
+            "payload": {
+              "duration": 0,
+              "equipmentParams": {
+                "synced": true
+              },
+              "label": "Combine ingredients",
+              "parameters": {
+                "description": "Combine the prepared citrus, ginger, and herbs in a clean jar, then pour in honey and water, stirring or shaking to dissolve the honey."
+              },
+              "position_x": 1150,
+              "position_y": 100,
+              "processEvents": [
+                {
+                  "label": "Start",
+                  "timeOffset": 0,
+                  "type": "START"
+                },
+                {
+                  "ingredientName": "citrus",
+                  "name": "citrus",
+                  "quantity": 0,
+                  "timeOffset": 0,
+                  "type": "INGREDIENT",
+                  "unit": "g"
+                },
+                {
+                  "ingredientName": "ginger",
+                  "name": "ginger",
+                  "quantity": 0,
+                  "timeOffset": 0,
+                  "type": "INGREDIENT",
+                  "unit": "g"
+                },
+                {
+                  "ingredientName": "herbs",
+                  "name": "herbs",
+                  "quantity": 10,
+                  "timeOffset": 0,
+                  "type": "INGREDIENT",
+                  "unit": "g"
+                },
+                {
+                  "ingredientName": "honey",
+                  "name": "honey",
+                  "quantity": 20,
+                  "timeOffset": 0,
+                  "type": "INGREDIENT",
+                  "unit": "g"
+                },
+                {
+                  "ingredientName": "water",
+                  "name": "water",
+                  "quantity": 30,
+                  "timeOffset": 0,
+                  "type": "INGREDIENT",
+                  "unit": "g"
+                },
+                {
+                  "label": "End",
+                  "timeOffset": 0,
+                  "type": "END"
+                },
+                {
+                  "name": "clove",
+                  "quantity": 4,
+                  "type": "INGREDIENT",
+                  "unit": "g"
+                },
+                {
+                  "name": "cinnamon",
+                  "quantity": 5,
+                  "type": "INGREDIENT",
+                  "unit": "g"
+                }
+              ]
+            },
+            "type": "process"
+          },
+          {
+            "duration_s": 432000,
+            "payload": {
+              "duration": 432000,
+              "equipmentParams": {
+                "synced": true
+              },
+              "label": "Ferment",
+              "parameters": {
+                "description": "Seal the jar loosely to allow gases to escape and leave it at room temperature to ferment, stirring or shaking daily, until the desired tangy fermented flavor is achieved, typically 3 to 7 days."
+              },
+              "position_x": 1500,
+              "position_y": 100,
+              "processEvents": [
+                {
+                  "label": "Start",
+                  "timeOffset": 0,
+                  "type": "START"
+                },
+                {
+                  "label": "End",
+                  "timeOffset": 432000,
+                  "type": "END"
+                }
+              ],
+              "temperature": 21
+            },
+            "type": "process"
+          },
+          {
+            "duration_s": 0,
+            "payload": {
+              "duration": 0,
+              "equipmentParams": {
+                "synced": true
+              },
+              "label": "Strain and bottle",
+              "parameters": {
+                "description": "Strain out the solids through a fine mesh strainer or cheesecloth and transfer the liquid elixir into a clean bottle or jar for storage."
+              },
+              "position_x": 1850,
+              "position_y": 100,
+              "processEvents": [
+                {
+                  "label": "Start",
+                  "timeOffset": 0,
+                  "type": "START"
+                },
+                {
+                  "label": "End",
+                  "timeOffset": 0,
+                  "type": "END"
+                }
+              ]
+            },
+            "type": "process"
+          },
+          {
+            "payload": {
+              "label": "Elixir of Invincibility",
+              "position_x": 2200,
+              "position_y": 100,
+              "title": "Elixir of Invincibility"
+            },
+            "type": "serve"
+          },
+          {
+            "payload": {
+              "category": "",
+              "label": "clove",
+              "position_x": 100,
+              "position_y": 830.30778774028,
+              "quantity": 4,
+              "unit": "pcs"
+            },
+            "type": "ingredient",
+            "ingredient_ref": "ing_18"
+          },
+          {
+            "payload": {
+              "category": "",
+              "label": "cinnamon",
+              "position_x": 98.97331045428001,
+              "position_y": 948.7473072801599,
+              "quantity": 5,
+              "unit": "g"
+            },
+            "type": "ingredient",
+            "ingredient_ref": "ing_19"
+          }
+        ],
+        "edges": [
+          {
+            "source_index": 0,
+            "target_index": 12,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 1,
+            "target_index": 14,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 2,
+            "target_index": 14,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 3,
+            "target_index": 13,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 4,
+            "target_index": 14,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 12,
+            "target_index": 13,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 13,
+            "target_index": 14,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 14,
+            "target_index": 15,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 15,
+            "target_index": 16,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 5,
+            "target_index": 12,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "top-source",
+              "targetHandle": "bottom-target"
+            }
+          },
+          {
+            "source_index": 5,
+            "target_index": 13,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "top-source",
+              "targetHandle": "bottom-target"
+            }
+          },
+          {
+            "source_index": 6,
+            "target_index": 12,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "top-source",
+              "targetHandle": "bottom-target"
+            }
+          },
+          {
+            "source_index": 6,
+            "target_index": 13,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "top-source",
+              "targetHandle": "bottom-target"
+            }
+          },
+          {
+            "source_index": 7,
+            "target_index": 14,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "top-source",
+              "targetHandle": "bottom-target"
+            }
+          },
+          {
+            "source_index": 7,
+            "target_index": 15,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "top-source",
+              "targetHandle": "bottom-target"
+            }
+          },
+          {
+            "source_index": 8,
+            "target_index": 14,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "top-source",
+              "targetHandle": "bottom-target"
+            }
+          },
+          {
+            "source_index": 9,
+            "target_index": 16,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "top-source",
+              "targetHandle": "bottom-target"
+            }
+          },
+          {
+            "source_index": 10,
+            "target_index": 16,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "top-source",
+              "targetHandle": "bottom-target"
+            }
+          },
+          {
+            "source_index": 11,
+            "target_index": 16,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "top-source",
+              "targetHandle": "bottom-target"
+            }
+          },
+          {
+            "source_index": 16,
+            "target_index": 17,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 18,
+            "target_index": 14,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          },
+          {
+            "source_index": 19,
+            "target_index": 14,
+            "role": "flow",
+            "payload": {
+              "sourceHandle": "right-source",
+              "targetHandle": "left-target"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "public_demo": true,
+  "public_demo_note": "Sanitized public demonstration fixture; internal database identifiers and dependency references removed."
+}

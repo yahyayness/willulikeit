@@ -1,0 +1,532 @@
+{
+  "magic": "AJX-MP6",
+  "mp6_version": "0.1",
+  "standard": {
+    "name": "MP6",
+    "full_name": "Multi-Perception 6",
+    "authority": "Ajinomatrix",
+    "schema_version": "0.1",
+    "status": "frozen_v0_1_operational"
+  },
+  "meta": {
+    "file_role": "sensory_score_report",
+    "profile_level": "product_profile_v0.1.1",
+    "usage_grade": "kitchen_lab_grade",
+    "title": "Elixir of Invincibility — AJNV4.3 synthetic MP6 reconstruction",
+    "created_at": "2026-08-25T00:47:00+02:00",
+    "language": "en",
+    "validation_status": "simulated_unvalidated",
+    "source_tool": "AJNV4.3 synthetic sensory model + screenshot reconstruction",
+    "source_recipe_version": "1.1.0",
+    "notes": [
+      "Static theoretical sensory projection only.",
+      "Scores were approximated visually from AJNV4.3 spider-chart screenshots; they are not measured panel data.",
+      "No temporal sensory curve has been synthesized.",
+      "This file is intended for MP6 Studio validation/repair and comparison workflows."
+    ]
+  },
+  "product": {
+    "id": "elixir-of-invincibility-v1-1-0",
+    "name": "Elixir of Invincibility",
+    "category": "fermented beverage / culinary elixir",
+    "recipe_version": "1.1.0",
+    "source_recipe_name": "Elixir of Invincibility (Imported)",
+    "source_description": "A fermented elixir made by marinating citrus, honey, water, ginger, herbs, clove and cinnamon, then straining and bottling.",
+    "process_summary": {
+      "fermentation_duration_seconds": 432000,
+      "fermentation_temperature_c": 21,
+      "final_process": "strain_and_bottle"
+    }
+  },
+  "source_data": {
+    "source_type": "AJNV4.3_recipe_plus_spiderchart_screenshots",
+    "recipe_file": "elixir_of_invincibility__imported__v1.1.0.json",
+    "visual_source_archive": "Profil MP6 Synthétique - Elixir d'Invincibilité.zip",
+    "reconstruction_method": "manual visual approximation of 0–10 radar axes",
+    "reconstruction_confidence": 0.65,
+    "limitations": [
+      "Original numeric final-product AJNV4.3 sensory scores were not present in the supplied recipe JSON.",
+      "The supplied recipe JSON contains ingredient-level generated sensory data for clove and cinnamon, but not a machine-readable final-product sensory score set.",
+      "Radar values are therefore approximate and should be replaced by native AJNV4.3 numeric output if exported later."
+    ]
+  },
+  "profile_schemas": [
+    {
+      "name": "MP6 Product Profile Schema",
+      "version": "0.1.1",
+      "scale": {
+        "min": 0,
+        "max": 10
+      },
+      "dimensions": [
+        "sight",
+        "smell",
+        "taste",
+        "touch",
+        "sound",
+        "intuition"
+      ]
+    }
+  ],
+  "evaluations": [
+    {
+      "id": "eval-elixir-v1-1-0-ajnv43-sim-reconstructed",
+      "evaluation_type": "ai_simulated_recipe_projection",
+      "subject": "Elixir of Invincibility v1.1.0",
+      "method": "AJNV4.3 synthetic sensory profile reconstructed from spider charts",
+      "confidence": 0.65,
+      "panel": null,
+      "instrument": null,
+      "scores": {
+        "sight": {
+          "color_vibrancy": {
+            "mean": 6.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "brightness_gloss": {
+            "mean": 4.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "contrast": {
+            "mean": 5.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "uniformity": {
+            "mean": 8.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "clarity_translucency": {
+            "mean": 4.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "shape_definition": {
+            "mean": 4.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          }
+        },
+        "smell": {
+          "odor_intensity": {
+            "mean": 8.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "odor_complexity": {
+            "mean": 7.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "odor_persistence": {
+            "mean": 7.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "freshness": {
+            "mean": 5.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "cleanliness": {
+            "mean": 6.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "fruity": {
+            "mean": 6.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "floral": {
+            "mean": 3.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "roasted": {
+            "mean": 1.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "spicy": {
+            "mean": 8.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "vegetal": {
+            "mean": 2.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "woody": {
+            "mean": 4.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "mineral": {
+            "mean": 1.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "dairy": {
+            "mean": 0.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "sweet_aromatic": {
+            "mean": 5.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          }
+        },
+        "taste": {
+          "taste_intensity": {
+            "mean": 9.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "balance": {
+            "mean": 7.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "aftertaste_length": {
+            "mean": 8.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "sweetness": {
+            "mean": 5.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "saltiness": {
+            "mean": 1.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "sourness": {
+            "mean": 6.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "bitterness": {
+            "mean": 3.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "umami": {
+            "mean": 2.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "body_richness": {
+            "mean": 8.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          }
+        },
+        "touch": {
+          "firmness": {
+            "mean": 4.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "juiciness_moisture": {
+            "mean": 3.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "crispness": {
+            "mean": 2.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "creaminess": {
+            "mean": 1.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "astringency_dryness": {
+            "mean": 4.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "chewiness": {
+            "mean": 3.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "graininess": {
+            "mean": 4.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "smoothness": {
+            "mean": 4.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "body": {
+            "mean": 7.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          }
+        },
+        "sound": {
+          "sound_loudness": {
+            "mean": 3.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "sound_crispness": {
+            "mean": 2.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "bubble_rate": {
+            "mean": 1.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          }
+        },
+        "intuition": {
+          "readiness_feel": {
+            "mean": 9.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "goal_fit": {
+            "mean": 9.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          },
+          "risk_concern": {
+            "mean": 3.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_simulated_reconstructed_from_spiderchart",
+            "confidence": 0.65
+          }
+        }
+      },
+      "summary": "The Elixir of Invincibility is represented by AJNV4.3 as a complex, flavorful beverage with strong spicy and fruity aroma, intense taste, moderate sweetness, rich body and a long aftertaste, with some astringency and graininess. The profile appears broadly balanced, with citrus, ginger, honey and spices as the principal sensory drivers.",
+      "provenance": {
+        "native_source": "ai_generated",
+        "was_generated": true,
+        "reconstructed_from_visual_output": true,
+        "measured": false,
+        "observed_by_panel": false
+      }
+    }
+  ],
+  "temporal_profile": {
+    "enabled": false,
+    "model": null,
+    "method": "not_recorded",
+    "time_unit": "seconds",
+    "duration_seconds": null,
+    "phases": [],
+    "tracks": [],
+    "dominance_events": [],
+    "note": "No attack/development/body/tail/aftertaste curve was present in the supplied evidence; no temporal profile was invented."
+  },
+  "target_profiles": [],
+  "consumer_clusters": [],
+  "comparison_reports": [],
+  "recipe_graph": {
+    "source": "AJNV4.3",
+    "source_file": "elixir_of_invincibility__imported__v1.1.0.json",
+    "recipe_version": "1.1.0",
+    "linkage_status": "reference_only"
+  },
+  "process_timelines": [],
+  "lots": [],
+  "attachments": [],
+  "governance": {
+    "certification": "not_certified",
+    "certified_by": null,
+    "certificate_id": null,
+    "validation_status": "simulated_unvalidated",
+    "data_class": "synthetic_recipe_prediction",
+    "health_claims": false,
+    "disclaimer": "MP6-compatible reconstruction candidate. Not sensory panel data, not a measurement, not Ajinomatrix certification, and not a medical or health assessment."
+  }
+}

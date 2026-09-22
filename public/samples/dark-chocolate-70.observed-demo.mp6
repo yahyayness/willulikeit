@@ -1,0 +1,84 @@
+{
+  "magic": "AJX-MP6",
+  "mp6_version": "0.1",
+  "standard": {
+    "name": "MP6",
+    "full_name": "Multi-Perception 6",
+    "authority": "Ajinomatrix",
+    "schema_version": "0.1",
+    "status": "frozen_v0_1_operational"
+  },
+  "meta": {
+    "file_role": "sensory_timeline",
+    "profile_level": "minimal",
+    "usage_grade": "consumer_grade",
+    "origin_channel": "mp6_recorder",
+    "recording_mode": "live",
+    "source_tool": {
+      "name": "MP6 Recorder",
+      "version": "0.1"
+    },
+    "concept_attribution": "Markus Ojala, SeAMK University",
+    "created_at": "2026-09-23T20:00:00+02:00",
+    "synthetic_demo": true
+  },
+  "product": {
+    "id": "dark-chocolate-70",
+    "name": "Dark chocolate bar 70%",
+    "category": "chocolate"
+  },
+  "profile_schemas": [],
+  "evaluations": [
+    {
+      "id": "eval-001",
+      "type": "single_user_recording",
+      "method": "voice_journaling",
+      "evaluated_at": "2026-09-23T20:00:00+02:00",
+      "results": [
+        {
+          "dimension": "taste",
+          "attribute": "sweetness",
+          "value": 5
+        },
+        {
+          "dimension": "taste",
+          "attribute": "bitterness",
+          "value": 6
+        },
+        {
+          "dimension": "taste",
+          "attribute": "sourness",
+          "value": 7
+        },
+        {
+          "dimension": "smell",
+          "attribute": "roasted",
+          "value": 6
+        },
+        {
+          "dimension": "smell",
+          "attribute": "fruity",
+          "value": 6
+        },
+        {
+          "dimension": "touch",
+          "attribute": "creaminess",
+          "value": 4
+        },
+        {
+          "dimension": "taste",
+          "attribute": "aftertaste_length",
+          "value": 7
+        }
+      ]
+    }
+  ],
+  "temporal_profile": {
+    "enabled": false
+  },
+  "governance": {
+    "compatibility_status": "MP6_V0.1_compatible",
+    "certification_status": "not_certified",
+    "validation_status": "self_recorded"
+  }
+}

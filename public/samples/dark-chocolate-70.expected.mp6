@@ -1,0 +1,187 @@
+{
+  "magic": "AJX-MP6",
+  "mp6_version": "0.1",
+  "standard": {
+    "name": "MP6",
+    "full_name": "Multi-Perception 6",
+    "authority": "Ajinomatrix",
+    "schema_version": "0.1",
+    "status": "frozen_v0_1_operational"
+  },
+  "meta": {
+    "file_role": "sensory_score_report",
+    "profile_level": "product_profile_v0.1.1",
+    "usage_grade": "consumer_grade",
+    "title": "Dark chocolate 70% — Expected MP6 (synthetic fixture)",
+    "created_at": "2026-09-23T00:00:00+02:00",
+    "language": "en",
+    "validation_status": "simulated_unvalidated",
+    "prediction_state": "MP6-SIM",
+    "synthetic_demo": true,
+    "source_tool": "WillULikeIT demo fixture",
+    "notes": [
+      "Synthetic fixture data for the WillULikeIT PoC demo. Not measured, not a model output."
+    ]
+  },
+  "product": {
+    "id": "dark-chocolate-70",
+    "name": "Dark chocolate bar 70%",
+    "category": "chocolate"
+  },
+  "profile_schemas": [
+    {
+      "name": "MP6 Product Profile Schema",
+      "version": "0.1.1",
+      "scale": {
+        "min": 0,
+        "max": 10
+      },
+      "dimensions": [
+        "sight",
+        "smell",
+        "taste",
+        "touch",
+        "sound",
+        "intuition"
+      ]
+    }
+  ],
+  "evaluations": [
+    {
+      "id": "eval-dark-chocolate-70-sim",
+      "evaluation_type": "ai_simulated_recipe_projection",
+      "subject": "Dark chocolate bar 70%",
+      "method": "synthetic demo fixture",
+      "confidence": 0.5,
+      "scores": {
+        "taste": {
+          "sweetness": {
+            "mean": 4.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "synthetic_fixture_expected",
+            "confidence": 0.5
+          },
+          "bitterness": {
+            "mean": 7.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "synthetic_fixture_expected",
+            "confidence": 0.5
+          },
+          "sourness": {
+            "mean": 5.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "synthetic_fixture_expected",
+            "confidence": 0.5
+          },
+          "aftertaste_length": {
+            "mean": 8.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "synthetic_fixture_expected",
+            "confidence": 0.5
+          },
+          "taste_intensity": {
+            "mean": 7.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "synthetic_fixture_expected",
+            "confidence": 0.5
+          }
+        },
+        "smell": {
+          "roasted": {
+            "mean": 8.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "synthetic_fixture_expected",
+            "confidence": 0.5
+          },
+          "fruity": {
+            "mean": 4.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "synthetic_fixture_expected",
+            "confidence": 0.5
+          },
+          "nutty": {
+            "mean": 3.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "synthetic_fixture_expected",
+            "confidence": 0.5
+          },
+          "odor_intensity": {
+            "mean": 7.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "synthetic_fixture_expected",
+            "confidence": 0.5
+          }
+        },
+        "touch": {
+          "creaminess": {
+            "mean": 4.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "synthetic_fixture_expected",
+            "confidence": 0.5
+          },
+          "crispness": {
+            "mean": 7.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "synthetic_fixture_expected",
+            "confidence": 0.5
+          },
+          "astringency_dryness": {
+            "mean": 4.0,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "synthetic_fixture_expected",
+            "confidence": 0.5
+          }
+        }
+      }
+    }
+  ],
+  "temporal_profile": {
+    "enabled": false,
+    "note": "No temporal curve — none was invented."
+  },
+  "recipe_graph": null,
+  "attachments": [],
+  "governance": {
+    "certification": "not_certified",
+    "validation_status": "simulated_unvalidated",
+    "data_class": "synthetic_demo_fixture",
+    "health_claims": false,
+    "disclaimer": "Synthetic demo fixture. Not sensory panel data, not a measurement, not Ajinomatrix certification."
+  }
+}
