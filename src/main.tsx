@@ -1,3 +1,4 @@
+import { installStudiosLinkOverride } from "./lib/studios-link";
 import React from "react";
 import { createRoot } from "react-dom/client";
 import { App } from "./App";
@@ -5,6 +6,7 @@ import "./styles.css";
 import { installGuard, showRecoverySurface, mountStudiosBar } from "./vendor/ajx-core/index.js";
 
 mountStudiosBar({ tool: "WillULikeIT", toolId: "willulikeit", step: "predict_fit" }); // AJX Studios Gate 2 — additive frame
+installStudiosLinkOverride(); // Gate 3: preview-only link override for in-page studio.ajinomatrix.com links
 
 // AJX Studios Gate 2: errors outside rendering are contained too (local only —
 // WillULikeIT sends nothing to any server).
