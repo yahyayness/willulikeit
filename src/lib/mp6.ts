@@ -12,6 +12,7 @@
 // ---------------------------------------------------------------------------
 
 import { canonicalAttr } from "./vocab";
+import { evaluationRecords } from "../vendor/ajx-core/index.js";
 import type { SensoryKind, SensoryProfile, SensoryValue } from "./types";
 
 export interface Mp6ParseResult {
@@ -158,6 +159,16 @@ export function parseMp6(text: string, fileName?: string, evaluationIndex = 0): 
   if (Array.isArray(ev?.results)) {
     for (const r of ev.results) {
       if (isObj(r) && typeof r.attribute === "string") ingest(typeof r.dimension === "string" ? r.dimension : undefined, r.attribute, r.value ?? r);
+    }
+  }
+  // AJX Studios Gate 2 (AJX-P0-009): MP6 Recorder ≥ v0.2.2.2 writes `results` as a
+  // nested Studio map and keeps per-attribute records in `result_records`. Read
+  // them through the shared ajx-core adapter ONLY when the historical shapes
+  // above yielded nothing, so every file that already worked reads identically
+  // (frozen fits and hashes are unaffected).
+  if (!Object.keys(values).length && !unmapped.length) {
+    for (const r of evaluationRecords(ev, { order: ["result_records", "results_map"], includeNonNumeric: true })) {
+      ingest(r.dimension ?? undefined, r.attribute, r.value === null ? null : r.scale ? { value: r.value, scale: r.scale } : r.value);
     }
   }
   if (!Object.keys(values).length && !unmapped.length) {

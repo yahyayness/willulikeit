@@ -1,0 +1,17 @@
+{
+  "vendored": "ajx-core",
+  "version": "0.1.0",
+  "source_repo": "ajx-studios",
+  "mode": "esm",
+  "files": {
+    "index.js": "2c19a14ded1be20259506c739b5cec7537844636218eaa2ea26c3ab6d0d6551a",
+    "index.d.ts": "38e2ba1f6bd7e247f1f85dcbeca2677cfb8d21b5fc78d62b9bf143eefe0def11",
+    "mp6-read.js": "ad78649ed91aae9c624891a6cf9510800bf505b5e71354297e6664bef3b755e7",
+    "file-accept.js": "44fd6d44d04aa1f46885737240f321d7951b764900f245fa628b96236d6f78db",
+    "guard.js": "1cc5314bc06d092a023fc4b6ecd6e156795b17420f9e1497c14b5654c103a17a",
+    "envelope.js": "51d37a67ee3df38e4c00704dd9f603d81a0aa9935745e35337ec93c2270131d5",
+    "telemetry.js": "36471c128b3c4d0ecb5378aa4825969ed6ef5bb32fb9fcb47027e4effa899b27",
+    "studios-bar.js": "a9e3ddd1084cbdf79779b22598813b78a0367f658b9f80672eeb18a1a59c5520"
+  },
+  "note": "Do not edit. Regenerate from ajx-studios with `npm run vendor:sync`; CI runs `npm run vendor:check`."
+}

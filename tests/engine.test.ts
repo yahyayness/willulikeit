@@ -236,3 +236,41 @@ describe("anchors", () => {
     expect(sweet.importance).toBe(3);
   });
 });
+
+// ---------------------------------------------------------------------------
+// AJX Studios Gate 2 — MP6 interoperability regressions (AJX-P0-009)
+// ---------------------------------------------------------------------------
+describe("Gate 2 · MP6 dialect interoperability", () => {
+  const A = (f: string) => readFileSync(join(__dirname, "fixtures/ajx", f), "utf8");
+  const golden = JSON.parse(A("parse-golden-pre-gate2.json")) as Record<string, any>;
+
+  test("C · current Recorder Observed MP6 (nested results map) is readable in After tasting", () => {
+    const r = parseMp6(A("recorder-v0222-observed.mp6"), "obs.mp6");
+    expect(r.ok).toBe(true);
+    expect(r.profile!.kind).toBe("observed");
+    expect(r.profile!.values.creaminess.value).toBe(9.4);
+    expect(r.profile!.values.sweetness.value).toBe(6.5);
+  });
+
+  test("D · Expected MP6 (current Recorder) still enters Predict as simulated", () => {
+    const r = parseMp6(A("recorder-v0222-expected.mp6"), "exp.mp6");
+    expect(r.ok).toBe(true);
+    expect(r.profile!.kind).toBe("expected");
+  });
+
+  test("files that already worked parse IDENTICALLY to the pre-Gate-2 reader (frozen fits unaffected)", () => {
+    for (const [key, before] of Object.entries(golden)) {
+      if (!before.ok) continue; // only the previously-broken current Observed may change
+      const dir = key.startsWith("../public") ? "../public/samples" : "fixtures/ajx";
+      const f = key.split("/").pop()!;
+      const after = parseMp6(readFileSync(join(__dirname, dir, f), "utf8"), f);
+      expect(JSON.parse(JSON.stringify(after)), key).toEqual(before);
+    }
+  });
+
+  test("Observed MP6 is never usable as a prediction; the rejected sound proposal is not in the observed profile", () => {
+    const r = parseMp6(A("legacy-recorder-v022-observed-results-array.mp6"), "pathb.mp6");
+    expect(r.profile!.kind).toBe("observed");
+    expect(Object.values(r.profile!.values).some((v) => v.source_dimension === "sound")).toBe(false);
+  });
+});

@@ -1,0 +1,1112 @@
+{
+ "../public/samples/dark-chocolate-70.expected.mp6": {
+  "ok": true,
+  "warnings": [],
+  "evaluations": [
+   {
+    "id": "eval-dark-chocolate-70-sim",
+    "label": "Dark chocolate bar 70%"
+   }
+  ],
+  "profile": {
+   "kind": "expected",
+   "kindReason": "meta.prediction_state = \"MP6-SIM\"",
+   "itemId": "dark-chocolate-70",
+   "itemName": "Dark chocolate bar 70%",
+   "category": "chocolate",
+   "synthetic": true,
+   "values": {
+    "sweetness": {
+     "value": 4,
+     "source_attribute": "sweetness",
+     "source_dimension": "taste",
+     "confidence": 0.5
+    },
+    "bitterness": {
+     "value": 7,
+     "source_attribute": "bitterness",
+     "source_dimension": "taste",
+     "confidence": 0.5
+    },
+    "sourness": {
+     "value": 5,
+     "source_attribute": "sourness",
+     "source_dimension": "taste",
+     "confidence": 0.5
+    },
+    "aftertaste_length": {
+     "value": 8,
+     "source_attribute": "aftertaste_length",
+     "source_dimension": "taste",
+     "confidence": 0.5
+    },
+    "taste_intensity": {
+     "value": 7,
+     "source_attribute": "taste_intensity",
+     "source_dimension": "taste",
+     "confidence": 0.5
+    },
+    "roasted": {
+     "value": 8,
+     "source_attribute": "roasted",
+     "source_dimension": "smell",
+     "confidence": 0.5
+    },
+    "fruity": {
+     "value": 4,
+     "source_attribute": "fruity",
+     "source_dimension": "smell",
+     "confidence": 0.5
+    },
+    "nutty": {
+     "value": 3,
+     "source_attribute": "nutty",
+     "source_dimension": "smell",
+     "confidence": 0.5
+    },
+    "odor_intensity": {
+     "value": 7,
+     "source_attribute": "odor_intensity",
+     "source_dimension": "smell",
+     "confidence": 0.5
+    },
+    "creaminess": {
+     "value": 4,
+     "source_attribute": "creaminess",
+     "source_dimension": "touch",
+     "confidence": 0.5
+    },
+    "crispness": {
+     "value": 7,
+     "source_attribute": "crispness",
+     "source_dimension": "touch",
+     "confidence": 0.5
+    },
+    "astringency_dryness": {
+     "value": 4,
+     "source_attribute": "astringency_dryness",
+     "source_dimension": "touch",
+     "confidence": 0.5
+    }
+   },
+   "unmapped": [],
+   "absent": [],
+   "evaluationId": "eval-dark-chocolate-70-sim",
+   "evaluationCount": 1,
+   "sourceFile": "dark-chocolate-70.expected.mp6",
+   "notes": [
+    "Synthetic fixture data for the WillULikeIT PoC demo. Not measured, not a model output.",
+    "Synthetic demo fixture. Not sensory panel data, not a measurement, not Ajinomatrix certification."
+   ]
+  }
+ },
+ "../public/samples/dark-chocolate-70.observed-demo.mp6": {
+  "ok": true,
+  "warnings": [],
+  "evaluations": [
+   {
+    "id": "eval-001",
+    "label": "single_user_recording"
+   }
+  ],
+  "profile": {
+   "kind": "observed",
+   "kindReason": "evaluation.type = \"single_user_recording\"",
+   "itemId": "dark-chocolate-70",
+   "itemName": "Dark chocolate bar 70%",
+   "category": "chocolate",
+   "synthetic": true,
+   "values": {
+    "sweetness": {
+     "value": 5,
+     "source_attribute": "sweetness",
+     "source_dimension": "taste"
+    },
+    "bitterness": {
+     "value": 6,
+     "source_attribute": "bitterness",
+     "source_dimension": "taste"
+    },
+    "sourness": {
+     "value": 7,
+     "source_attribute": "sourness",
+     "source_dimension": "taste"
+    },
+    "roasted": {
+     "value": 6,
+     "source_attribute": "roasted",
+     "source_dimension": "smell"
+    },
+    "fruity": {
+     "value": 6,
+     "source_attribute": "fruity",
+     "source_dimension": "smell"
+    },
+    "creaminess": {
+     "value": 4,
+     "source_attribute": "creaminess",
+     "source_dimension": "touch"
+    },
+    "aftertaste_length": {
+     "value": 7,
+     "source_attribute": "aftertaste_length",
+     "source_dimension": "taste"
+    }
+   },
+   "unmapped": [],
+   "absent": [],
+   "evaluationId": "eval-001",
+   "evaluationCount": 1,
+   "sourceFile": "dark-chocolate-70.observed-demo.mp6",
+   "notes": []
+  }
+ },
+ "../public/samples/elixir-of-invincibility-v1.1.0.expected.mp6": {
+  "ok": true,
+  "warnings": [],
+  "evaluations": [
+   {
+    "id": "eval-elixir-v1-1-0-ajnv43-sim-reconstructed",
+    "label": "Elixir of Invincibility v1.1.0"
+   }
+  ],
+  "profile": {
+   "kind": "expected",
+   "kindReason": "evaluation.evaluation_type = \"ai_simulated_recipe_projection\"",
+   "itemId": "elixir-of-invincibility-v1-1-0",
+   "itemName": "Elixir of Invincibility",
+   "category": "fermented beverage / culinary elixir",
+   "synthetic": true,
+   "values": {
+    "odor_intensity": {
+     "value": 8,
+     "source_attribute": "odor_intensity",
+     "source_dimension": "smell",
+     "confidence": 0.65
+    },
+    "odor_complexity": {
+     "value": 7,
+     "source_attribute": "odor_complexity",
+     "source_dimension": "smell",
+     "confidence": 0.65
+    },
+    "fruity": {
+     "value": 6,
+     "source_attribute": "fruity",
+     "source_dimension": "smell",
+     "confidence": 0.65
+    },
+    "floral": {
+     "value": 3,
+     "source_attribute": "floral",
+     "source_dimension": "smell",
+     "confidence": 0.65
+    },
+    "roasted": {
+     "value": 1,
+     "source_attribute": "roasted",
+     "source_dimension": "smell",
+     "confidence": 0.65
+    },
+    "spicy": {
+     "value": 8,
+     "source_attribute": "spicy",
+     "source_dimension": "smell",
+     "confidence": 0.65
+    },
+    "taste_intensity": {
+     "value": 9,
+     "source_attribute": "taste_intensity",
+     "source_dimension": "taste",
+     "confidence": 0.65
+    },
+    "aftertaste_length": {
+     "value": 8,
+     "source_attribute": "aftertaste_length",
+     "source_dimension": "taste",
+     "confidence": 0.65
+    },
+    "sweetness": {
+     "value": 5,
+     "source_attribute": "sweetness",
+     "source_dimension": "taste",
+     "confidence": 0.65
+    },
+    "saltiness": {
+     "value": 1,
+     "source_attribute": "saltiness",
+     "source_dimension": "taste",
+     "confidence": 0.65
+    },
+    "sourness": {
+     "value": 6,
+     "source_attribute": "sourness",
+     "source_dimension": "taste",
+     "confidence": 0.65
+    },
+    "bitterness": {
+     "value": 3,
+     "source_attribute": "bitterness",
+     "source_dimension": "taste",
+     "confidence": 0.65
+    },
+    "umami": {
+     "value": 2,
+     "source_attribute": "umami",
+     "source_dimension": "taste",
+     "confidence": 0.65
+    },
+    "body": {
+     "value": 7,
+     "source_attribute": "body",
+     "source_dimension": "touch",
+     "confidence": 0.65
+    },
+    "crispness": {
+     "value": 2,
+     "source_attribute": "crispness",
+     "source_dimension": "touch",
+     "confidence": 0.65
+    },
+    "creaminess": {
+     "value": 1,
+     "source_attribute": "creaminess",
+     "source_dimension": "touch",
+     "confidence": 0.65
+    },
+    "astringency_dryness": {
+     "value": 4,
+     "source_attribute": "astringency_dryness",
+     "source_dimension": "touch",
+     "confidence": 0.65
+    }
+   },
+   "unmapped": [
+    {
+     "dimension": "sight",
+     "attribute": "color_vibrancy",
+     "value": 6
+    },
+    {
+     "dimension": "sight",
+     "attribute": "brightness_gloss",
+     "value": 4
+    },
+    {
+     "dimension": "sight",
+     "attribute": "contrast",
+     "value": 5
+    },
+    {
+     "dimension": "sight",
+     "attribute": "uniformity",
+     "value": 8
+    },
+    {
+     "dimension": "sight",
+     "attribute": "clarity_translucency",
+     "value": 4
+    },
+    {
+     "dimension": "sight",
+     "attribute": "shape_definition",
+     "value": 4
+    },
+    {
+     "dimension": "smell",
+     "attribute": "odor_persistence",
+     "value": 7
+    },
+    {
+     "dimension": "smell",
+     "attribute": "freshness",
+     "value": 5
+    },
+    {
+     "dimension": "smell",
+     "attribute": "cleanliness",
+     "value": 6
+    },
+    {
+     "dimension": "smell",
+     "attribute": "vegetal",
+     "value": 2
+    },
+    {
+     "dimension": "smell",
+     "attribute": "woody",
+     "value": 4
+    },
+    {
+     "dimension": "smell",
+     "attribute": "mineral",
+     "value": 1
+    },
+    {
+     "dimension": "smell",
+     "attribute": "dairy",
+     "value": 0
+    },
+    {
+     "dimension": "smell",
+     "attribute": "sweet_aromatic",
+     "value": 5
+    },
+    {
+     "dimension": "taste",
+     "attribute": "balance",
+     "value": 7
+    },
+    {
+     "dimension": "touch",
+     "attribute": "firmness",
+     "value": 4
+    },
+    {
+     "dimension": "touch",
+     "attribute": "juiciness_moisture",
+     "value": 3
+    },
+    {
+     "dimension": "touch",
+     "attribute": "chewiness",
+     "value": 3
+    },
+    {
+     "dimension": "touch",
+     "attribute": "graininess",
+     "value": 4
+    },
+    {
+     "dimension": "touch",
+     "attribute": "smoothness",
+     "value": 4
+    },
+    {
+     "dimension": "taste",
+     "attribute": "body_richness",
+     "value": 8
+    },
+    {
+     "dimension": "sound",
+     "attribute": "sound_loudness",
+     "value": 3
+    },
+    {
+     "dimension": "sound",
+     "attribute": "sound_crispness",
+     "value": 2
+    },
+    {
+     "dimension": "sound",
+     "attribute": "bubble_rate",
+     "value": 1
+    },
+    {
+     "dimension": "intuition",
+     "attribute": "readiness_feel",
+     "value": 9
+    },
+    {
+     "dimension": "intuition",
+     "attribute": "goal_fit",
+     "value": 9
+    },
+    {
+     "dimension": "intuition",
+     "attribute": "risk_concern",
+     "value": 3
+    }
+   ],
+   "absent": [],
+   "evaluationId": "eval-elixir-v1-1-0-ajnv43-sim-reconstructed",
+   "evaluationCount": 1,
+   "sourceFile": "elixir-of-invincibility-v1.1.0.expected.mp6",
+   "linkedRecipe": "elixir_of_invincibility__imported__v1.1.0.json",
+   "notes": [
+    "Static theoretical sensory projection only.",
+    "Scores were approximated visually from AJNV4.3 spider-chart screenshots; they are not measured panel data.",
+    "No temporal sensory curve has been synthesized.",
+    "This file is intended for MP6 Studio validation/repair and comparison workflows.",
+    "MP6-compatible reconstruction candidate. Not sensory panel data, not a measurement, not Ajinomatrix certification, and not a medical or health assessment."
+   ]
+  }
+ },
+ "../public/samples/gianduja-v1.1.0.expected.mp6": {
+  "ok": true,
+  "warnings": [],
+  "evaluations": [
+   {
+    "id": "eval-gianduja-v1-1-0-sim",
+    "label": "Gianduja"
+   }
+  ],
+  "profile": {
+   "kind": "expected",
+   "kindReason": "meta.prediction_state = \"MP6-SIM\"",
+   "itemId": "gianduja-v1-1-0",
+   "itemName": "Gianduja",
+   "category": "chocolate / confection",
+   "synthetic": true,
+   "values": {
+    "sweetness": {
+     "value": 7,
+     "source_attribute": "sweetness",
+     "source_dimension": "taste",
+     "confidence": 0.5
+    },
+    "bitterness": {
+     "value": 3,
+     "source_attribute": "bitterness",
+     "source_dimension": "taste",
+     "confidence": 0.5
+    },
+    "sourness": {
+     "value": 2,
+     "source_attribute": "sourness",
+     "source_dimension": "taste",
+     "confidence": 0.5
+    },
+    "saltiness": {
+     "value": 2,
+     "source_attribute": "saltiness",
+     "source_dimension": "taste",
+     "confidence": 0.5
+    },
+    "aftertaste_length": {
+     "value": 6,
+     "source_attribute": "aftertaste_length",
+     "source_dimension": "taste",
+     "confidence": 0.5
+    },
+    "taste_intensity": {
+     "value": 6,
+     "source_attribute": "taste_intensity",
+     "source_dimension": "taste",
+     "confidence": 0.5
+    },
+    "roasted": {
+     "value": 6,
+     "source_attribute": "roasted",
+     "source_dimension": "smell",
+     "confidence": 0.5
+    },
+    "nutty": {
+     "value": 9,
+     "source_attribute": "nutty",
+     "source_dimension": "smell",
+     "confidence": 0.5
+    },
+    "fruity": {
+     "value": 1,
+     "source_attribute": "fruity",
+     "source_dimension": "smell",
+     "confidence": 0.5
+    },
+    "odor_intensity": {
+     "value": 6,
+     "source_attribute": "odor_intensity",
+     "source_dimension": "smell",
+     "confidence": 0.5
+    },
+    "odor_complexity": {
+     "value": 5,
+     "source_attribute": "odor_complexity",
+     "source_dimension": "smell",
+     "confidence": 0.5
+    },
+    "creaminess": {
+     "value": 9,
+     "source_attribute": "creaminess",
+     "source_dimension": "touch",
+     "confidence": 0.5
+    },
+    "crispness": {
+     "value": 2,
+     "source_attribute": "crispness",
+     "source_dimension": "touch",
+     "confidence": 0.5
+    },
+    "body": {
+     "value": 7,
+     "source_attribute": "body",
+     "source_dimension": "touch",
+     "confidence": 0.5
+    }
+   },
+   "unmapped": [],
+   "absent": [],
+   "evaluationId": "eval-gianduja-v1-1-0-sim",
+   "evaluationCount": 1,
+   "sourceFile": "gianduja-v1.1.0.expected.mp6",
+   "linkedRecipe": "gianduja-v1.1.0.jrf",
+   "notes": [
+    "Synthetic fixture data for the WillULikeIT PoC demo. Not measured, not a model output.",
+    "Paired with the Gianduja JRF from jrf.recipes.",
+    "Synthetic demo fixture. Not sensory panel data, not a measurement, not Ajinomatrix certification."
+   ]
+  }
+ },
+ "fixtures/ajx/legacy-recorder-v022-expected-scores-only.mp6": {
+  "ok": true,
+  "warnings": [],
+  "evaluations": [
+   {
+    "id": "eval-sim-muahpunk",
+    "label": "Elixir of Invincibility (Imported)"
+   }
+  ],
+  "profile": {
+   "kind": "expected",
+   "kindReason": "evaluation.evaluation_type = \"ai_simulated_recipe_projection\"",
+   "itemId": "elixir-of-invincibility-imported-",
+   "itemName": "Elixir of Invincibility (Imported)",
+   "synthetic": false,
+   "values": {
+    "aftertaste_length": {
+     "value": 7.5,
+     "source_attribute": "aftertaste_length",
+     "source_dimension": "taste",
+     "confidence": 0.9
+    },
+    "taste_intensity": {
+     "value": 7.3,
+     "source_attribute": "taste_intensity",
+     "source_dimension": "taste",
+     "confidence": 0.35
+    },
+    "body": {
+     "value": 6.5,
+     "source_attribute": "body_richness",
+     "source_dimension": "taste",
+     "confidence": 0.9
+    },
+    "sweetness": {
+     "value": 4.3,
+     "source_attribute": "sweetness",
+     "source_dimension": "taste",
+     "confidence": 0.35
+    },
+    "sourness": {
+     "value": 4,
+     "source_attribute": "sourness",
+     "source_dimension": "taste",
+     "confidence": 0.35
+    },
+    "bitterness": {
+     "value": 2.5,
+     "source_attribute": "bitterness",
+     "source_dimension": "taste",
+     "confidence": 0.9
+    },
+    "umami": {
+     "value": 2,
+     "source_attribute": "umami",
+     "source_dimension": "taste",
+     "confidence": 0.9
+    },
+    "saltiness": {
+     "value": 1,
+     "source_attribute": "saltiness",
+     "source_dimension": "taste",
+     "confidence": 0.9
+    },
+    "odor_complexity": {
+     "value": 9.5,
+     "source_attribute": "odor_complexity",
+     "source_dimension": "smell",
+     "confidence": 0.9
+    },
+    "odor_intensity": {
+     "value": 8.5,
+     "source_attribute": "odor_intensity",
+     "source_dimension": "smell",
+     "confidence": 0.9
+    },
+    "spicy": {
+     "value": 8.3,
+     "source_attribute": "spicy",
+     "source_dimension": "smell",
+     "confidence": 0.35
+    },
+    "floral": {
+     "value": 3.3,
+     "source_attribute": "floral",
+     "source_dimension": "smell",
+     "confidence": 0.35
+    },
+    "fruity": {
+     "value": 3,
+     "source_attribute": "fruity",
+     "source_dimension": "smell",
+     "confidence": 0.35
+    },
+    "roasted": {
+     "value": 2.5,
+     "source_attribute": "roasted",
+     "source_dimension": "smell",
+     "confidence": 0.9
+    },
+    "astringency_dryness": {
+     "value": 4.7,
+     "source_attribute": "astringency_dryness",
+     "source_dimension": "touch",
+     "confidence": 0.35
+    },
+    "crispness": {
+     "value": 2,
+     "source_attribute": "crispness",
+     "source_dimension": "touch",
+     "confidence": 0.9
+    }
+   },
+   "unmapped": [
+    {
+     "dimension": "taste",
+     "attribute": "balance",
+     "value": 6.5
+    },
+    {
+     "dimension": "smell",
+     "attribute": "odor_persistence",
+     "value": 9.5
+    },
+    {
+     "dimension": "smell",
+     "attribute": "sweet_aromatic",
+     "value": 6.7
+    },
+    {
+     "dimension": "smell",
+     "attribute": "woody",
+     "value": 6.5
+    },
+    {
+     "dimension": "smell",
+     "attribute": "cleanliness",
+     "value": 5.5
+    },
+    {
+     "dimension": "smell",
+     "attribute": "freshness",
+     "value": 4.9
+    },
+    {
+     "dimension": "smell",
+     "attribute": "vegetal",
+     "value": 3.3
+    },
+    {
+     "dimension": "smell",
+     "attribute": "mineral",
+     "value": 1
+    },
+    {
+     "dimension": "touch",
+     "attribute": "firmness",
+     "value": 7
+    },
+    {
+     "dimension": "touch",
+     "attribute": "chewiness",
+     "value": 3.5
+    },
+    {
+     "dimension": "touch",
+     "attribute": "graininess",
+     "value": 3.5
+    },
+    {
+     "dimension": "touch",
+     "attribute": "juiciness_moisture",
+     "value": 1
+    },
+    {
+     "dimension": "sight",
+     "attribute": "uniformity",
+     "value": 7
+    },
+    {
+     "dimension": "sight",
+     "attribute": "shape_definition",
+     "value": 6.5
+    },
+    {
+     "dimension": "sight",
+     "attribute": "contrast",
+     "value": 5.5
+    },
+    {
+     "dimension": "sight",
+     "attribute": "color_vivacity",
+     "value": 5.5
+    },
+    {
+     "dimension": "sight",
+     "attribute": "clarity_translucency",
+     "value": 3
+    },
+    {
+     "dimension": "sight",
+     "attribute": "brightness_gloss",
+     "value": 2.5
+    },
+    {
+     "dimension": "sound",
+     "attribute": "sound_loudness",
+     "value": 2
+    },
+    {
+     "dimension": "sound",
+     "attribute": "bubble_rate",
+     "value": 2
+    },
+    {
+     "dimension": "sound",
+     "attribute": "sound_crispness",
+     "value": 1.5
+    },
+    {
+     "dimension": "intuition",
+     "attribute": "goal_fit",
+     "value": 8.5
+    },
+    {
+     "dimension": "intuition",
+     "attribute": "readiness_feel",
+     "value": 7.5
+    },
+    {
+     "dimension": "intuition",
+     "attribute": "risk_concern",
+     "value": 2
+    }
+   ],
+   "absent": [],
+   "evaluationId": "eval-sim-muahpunk",
+   "evaluationCount": 1,
+   "sourceFile": "legacy-recorder-v022-expected-scores-only.mp6",
+   "notes": []
+  }
+ },
+ "fixtures/ajx/legacy-recorder-v022-observed-results-array.mp6": {
+  "ok": true,
+  "warnings": [],
+  "evaluations": [
+   {
+    "id": "eval-obs-muae8shp",
+    "label": "single_user_recording"
+   }
+  ],
+  "profile": {
+   "kind": "observed",
+   "kindReason": "evaluation.type = \"single_user_recording\"",
+   "itemId": "dark-chocolate-85-test",
+   "itemName": "Dark Chocolate 85% Test",
+   "category": "Chocolate / Confectionery",
+   "synthetic": false,
+   "values": {
+    "sweetness": {
+     "value": 6.5,
+     "source_attribute": "sweetness",
+     "source_dimension": "taste"
+    },
+    "roasted": {
+     "value": 6.5,
+     "source_attribute": "roasted",
+     "source_dimension": "smell"
+    },
+    "creaminess": {
+     "value": 9.4,
+     "source_attribute": "creaminess",
+     "source_dimension": "touch"
+    }
+   },
+   "unmapped": [
+    {
+     "dimension": "smell",
+     "attribute": "cocoa",
+     "value": 6.5
+    },
+    {
+     "dimension": "touch",
+     "attribute": "melting",
+     "value": 9.4
+    },
+    {
+     "dimension": "sight",
+     "attribute": "brightness_gloss",
+     "value": 6.5
+    },
+    {
+     "dimension": "intuition",
+     "attribute": "comfort",
+     "value": 6.5
+    },
+    {
+     "dimension": "intuition",
+     "attribute": "desire",
+     "value": 6.5
+    }
+   ],
+   "absent": [],
+   "evaluationId": "eval-obs-muae8shp",
+   "evaluationCount": 1,
+   "sourceFile": "legacy-recorder-v022-observed-results-array.mp6",
+   "notes": []
+  }
+ },
+ "fixtures/ajx/recorder-v0222-expected.mp6": {
+  "ok": true,
+  "warnings": [],
+  "evaluations": [
+   {
+    "id": "eval-sim-mungyrtc",
+    "label": "Elixir of Invincibility (Imported)"
+   }
+  ],
+  "profile": {
+   "kind": "expected",
+   "kindReason": "evaluation.evaluation_type = \"ai_simulated_recipe_projection\"",
+   "itemId": "elixir-of-invincibility-imported-",
+   "itemName": "Elixir of Invincibility (Imported)",
+   "synthetic": false,
+   "values": {
+    "aftertaste_length": {
+     "value": 7.5,
+     "source_attribute": "aftertaste_length",
+     "source_dimension": "taste",
+     "confidence": 0.9
+    },
+    "taste_intensity": {
+     "value": 7.3,
+     "source_attribute": "taste_intensity",
+     "source_dimension": "taste",
+     "confidence": 0.35
+    },
+    "body": {
+     "value": 6.5,
+     "source_attribute": "body_richness",
+     "source_dimension": "taste",
+     "confidence": 0.9
+    },
+    "sweetness": {
+     "value": 4.3,
+     "source_attribute": "sweetness",
+     "source_dimension": "taste",
+     "confidence": 0.35
+    },
+    "sourness": {
+     "value": 4,
+     "source_attribute": "sourness",
+     "source_dimension": "taste",
+     "confidence": 0.35
+    },
+    "bitterness": {
+     "value": 2.5,
+     "source_attribute": "bitterness",
+     "source_dimension": "taste",
+     "confidence": 0.9
+    },
+    "umami": {
+     "value": 2,
+     "source_attribute": "umami",
+     "source_dimension": "taste",
+     "confidence": 0.9
+    },
+    "saltiness": {
+     "value": 1,
+     "source_attribute": "saltiness",
+     "source_dimension": "taste",
+     "confidence": 0.9
+    },
+    "odor_complexity": {
+     "value": 9.5,
+     "source_attribute": "odor_complexity",
+     "source_dimension": "smell",
+     "confidence": 0.9
+    },
+    "odor_intensity": {
+     "value": 8.5,
+     "source_attribute": "odor_intensity",
+     "source_dimension": "smell",
+     "confidence": 0.9
+    },
+    "spicy": {
+     "value": 8.3,
+     "source_attribute": "spicy",
+     "source_dimension": "smell",
+     "confidence": 0.35
+    },
+    "floral": {
+     "value": 3.3,
+     "source_attribute": "floral",
+     "source_dimension": "smell",
+     "confidence": 0.35
+    },
+    "fruity": {
+     "value": 3,
+     "source_attribute": "fruity",
+     "source_dimension": "smell",
+     "confidence": 0.35
+    },
+    "roasted": {
+     "value": 2.5,
+     "source_attribute": "roasted",
+     "source_dimension": "smell",
+     "confidence": 0.9
+    },
+    "astringency_dryness": {
+     "value": 4.7,
+     "source_attribute": "astringency_dryness",
+     "source_dimension": "touch",
+     "confidence": 0.35
+    },
+    "crispness": {
+     "value": 2,
+     "source_attribute": "crispness",
+     "source_dimension": "touch",
+     "confidence": 0.9
+    }
+   },
+   "unmapped": [
+    {
+     "dimension": "taste",
+     "attribute": "balance",
+     "value": 6.5
+    },
+    {
+     "dimension": "smell",
+     "attribute": "odor_persistence",
+     "value": 9.5
+    },
+    {
+     "dimension": "smell",
+     "attribute": "sweet_aromatic",
+     "value": 6.7
+    },
+    {
+     "dimension": "smell",
+     "attribute": "woody",
+     "value": 6.5
+    },
+    {
+     "dimension": "smell",
+     "attribute": "cleanliness",
+     "value": 5.5
+    },
+    {
+     "dimension": "smell",
+     "attribute": "freshness",
+     "value": 4.9
+    },
+    {
+     "dimension": "smell",
+     "attribute": "vegetal",
+     "value": 3.3
+    },
+    {
+     "dimension": "smell",
+     "attribute": "mineral",
+     "value": 1
+    },
+    {
+     "dimension": "touch",
+     "attribute": "firmness",
+     "value": 7
+    },
+    {
+     "dimension": "touch",
+     "attribute": "chewiness",
+     "value": 3.5
+    },
+    {
+     "dimension": "touch",
+     "attribute": "graininess",
+     "value": 3.5
+    },
+    {
+     "dimension": "touch",
+     "attribute": "juiciness_moisture",
+     "value": 1
+    },
+    {
+     "dimension": "sight",
+     "attribute": "uniformity",
+     "value": 7
+    },
+    {
+     "dimension": "sight",
+     "attribute": "shape_definition",
+     "value": 6.5
+    },
+    {
+     "dimension": "sight",
+     "attribute": "contrast",
+     "value": 5.5
+    },
+    {
+     "dimension": "sight",
+     "attribute": "color_vivacity",
+     "value": 5.5
+    },
+    {
+     "dimension": "sight",
+     "attribute": "clarity_translucency",
+     "value": 3
+    },
+    {
+     "dimension": "sight",
+     "attribute": "brightness_gloss",
+     "value": 2.5
+    },
+    {
+     "dimension": "sound",
+     "attribute": "sound_loudness",
+     "value": 2
+    },
+    {
+     "dimension": "sound",
+     "attribute": "bubble_rate",
+     "value": 2
+    },
+    {
+     "dimension": "sound",
+     "attribute": "sound_crispness",
+     "value": 1.5
+    },
+    {
+     "dimension": "intuition",
+     "attribute": "goal_fit",
+     "value": 8.5
+    },
+    {
+     "dimension": "intuition",
+     "attribute": "readiness_feel",
+     "value": 7.5
+    },
+    {
+     "dimension": "intuition",
+     "attribute": "risk_concern",
+     "value": 2
+    }
+   ],
+   "absent": [],
+   "evaluationId": "eval-sim-mungyrtc",
+   "evaluationCount": 1,
+   "sourceFile": "recorder-v0222-expected.mp6",
+   "notes": []
+  }
+ },
+ "fixtures/ajx/recorder-v0222-observed.mp6": {
+  "ok": false,
+  "error": "The selected evaluation carries no numeric sensory values (scores or results). Nothing was invented to fill the gap.",
+  "warnings": [],
+  "evaluations": [
+   {
+    "id": "eval-obs-mungywtz",
+    "label": "human_observed_sensory_recording"
+   }
+  ]
+ }
+}

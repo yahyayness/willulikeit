@@ -82,7 +82,7 @@ export function Log() {
                   const c = store.importData(r.data);
                   refresh();
                   toast(`Imported ${c.profiles} profiles, ${c.predictions} predictions, ${c.outcomes} outcomes (existing ones untouched)`);
-                });
+                }).catch(() => setImportErr("The file could not be read from this device. Nothing was imported."));
                 e.target.value = "";
               }}
             />

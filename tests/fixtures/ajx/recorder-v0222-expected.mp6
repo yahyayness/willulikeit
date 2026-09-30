@@ -1,0 +1,1313 @@
+{
+  "magic": "AJX-MP6",
+  "mp6_version": "0.1",
+  "standard": {
+    "name": "MP6",
+    "full_name": "Multi-Perception 6",
+    "authority": "Ajinomatrix",
+    "schema_version": "0.1",
+    "status": "frozen_v0_1_operational"
+  },
+  "meta": {
+    "file_role": "sensory_score_report",
+    "profile_level": "minimal",
+    "usage_grade": "kitchen_lab_grade",
+    "title": "Elixir of Invincibility (Imported) — Expected MP6 (panel-less prediction)",
+    "origin_channel": "mp6_recorder",
+    "assessment_mode": "predicted",
+    "evidence_origin": "model_inferred",
+    "method": "panel_less_prediction",
+    "source_tool": {
+      "name": "MP6 Recorder",
+      "version": "0.2.2.2"
+    },
+    "concept_attribution": "Markus Ojala, SeAMK University",
+    "validation_status": "simulated_unvalidated",
+    "created_at": "2026-09-30T02:11:38.448Z",
+    "disclaimer": "EXPECTED MP6 — panel-less prediction / sensory simulation. Not measured panel data. Not validated panel equivalence."
+  },
+  "product": {
+    "id": "elixir-of-invincibility-imported-",
+    "name": "Elixir of Invincibility (Imported)",
+    "recipe_version": "1.1.0",
+    "source_recipe_name": "Elixir of Invincibility (Imported)"
+  },
+  "source_data": {
+    "source_type": "jrf_panel_less_prediction",
+    "input_jrf_name": "Elixir of Invincibility (Imported)",
+    "input_jrf_version": "1.1.0",
+    "input_jrf_hash": "ba7bc2e60003d522da64846a1d252583e1e92ef47e66af815dbe2971d7a6e642",
+    "input_hash": "ba7bc2e60003d522da64846a1d252583e1e92ef47e66af815dbe2971d7a6e642",
+    "prediction_engine": {
+      "name": "mp6r-deterministic-predictor",
+      "version": "0.2.0",
+      "prompt_version": null,
+      "model_provider": "ajinomatrix-local",
+      "model_name": "jrf-heuristic-aggregate",
+      "note": "Deterministic JRF aggregation + vocabulary heuristics. No LLM call in v0.2 runtime.",
+      "fallback_from": "model-backed",
+      "fallback_reason": "user chose Standard after AI-enhanced failure",
+      "fallback_chosen_by": "user"
+    },
+    "context_inputs": {},
+    "prediction_exposure": "shown_before_tasting",
+    "generated_at": "2026-09-30T02:11:38.448Z"
+  },
+  "profile_schemas": [
+    {
+      "name": "MP6 Product Profile Schema",
+      "version": "0.1.1",
+      "scale": {
+        "min": 0,
+        "max": 10
+      },
+      "dimensions": [
+        "taste",
+        "smell",
+        "touch",
+        "sight",
+        "sound",
+        "intuition"
+      ]
+    }
+  ],
+  "evaluations": [
+    {
+      "id": "eval-sim-mungyrtc",
+      "type": "ai_simulated_recipe_projection",
+      "evaluation_type": "ai_simulated_recipe_projection",
+      "evaluated_at": "2026-09-30T02:11:38.448Z",
+      "subject": "Elixir of Invincibility (Imported)",
+      "method": "panel_less_prediction (deterministic JRF aggregation + heuristics)",
+      "confidence": null,
+      "panel": null,
+      "instrument": null,
+      "scores": {
+        "taste": {
+          "aftertaste_length": {
+            "mean": 7.5,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          },
+          "taste_intensity": {
+            "mean": 7.3,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.35
+          },
+          "balance": {
+            "mean": 6.5,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          },
+          "body_richness": {
+            "mean": 6.5,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          },
+          "sweetness": {
+            "mean": 4.3,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.35
+          },
+          "sourness": {
+            "mean": 4,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.35
+          },
+          "bitterness": {
+            "mean": 2.5,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          },
+          "umami": {
+            "mean": 2,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          },
+          "saltiness": {
+            "mean": 1,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          }
+        },
+        "smell": {
+          "odor_complexity": {
+            "mean": 9.5,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          },
+          "odor_persistence": {
+            "mean": 9.5,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          },
+          "odor_intensity": {
+            "mean": 8.5,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          },
+          "spicy": {
+            "mean": 8.3,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.35
+          },
+          "sweet_aromatic": {
+            "mean": 6.7,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.35
+          },
+          "woody": {
+            "mean": 6.5,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          },
+          "cleanliness": {
+            "mean": 5.5,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          },
+          "freshness": {
+            "mean": 4.9,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.35
+          },
+          "floral": {
+            "mean": 3.3,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.35
+          },
+          "vegetal": {
+            "mean": 3.3,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.35
+          },
+          "fruity": {
+            "mean": 3,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.35
+          },
+          "roasted": {
+            "mean": 2.5,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          },
+          "mineral": {
+            "mean": 1,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          }
+        },
+        "touch": {
+          "firmness": {
+            "mean": 7,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          },
+          "astringency_dryness": {
+            "mean": 4.7,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.35
+          },
+          "chewiness": {
+            "mean": 3.5,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          },
+          "graininess": {
+            "mean": 3.5,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          },
+          "crispness": {
+            "mean": 2,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          },
+          "juiciness_moisture": {
+            "mean": 1,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          }
+        },
+        "sight": {
+          "uniformity": {
+            "mean": 7,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          },
+          "shape_definition": {
+            "mean": 6.5,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          },
+          "contrast": {
+            "mean": 5.5,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          },
+          "color_vivacity": {
+            "mean": 5.5,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          },
+          "clarity_translucency": {
+            "mean": 3,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          },
+          "brightness_gloss": {
+            "mean": 2.5,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          }
+        },
+        "sound": {
+          "sound_loudness": {
+            "mean": 2,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          },
+          "bubble_rate": {
+            "mean": 2,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.3
+          },
+          "sound_crispness": {
+            "mean": 1.5,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          }
+        },
+        "intuition": {
+          "goal_fit": {
+            "mean": 8.5,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          },
+          "readiness_feel": {
+            "mean": 7.5,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          },
+          "risk_concern": {
+            "mean": 2,
+            "scale": {
+              "min": 0,
+              "max": 10
+            },
+            "evidence_kind": "ai_predicted_user_accepted",
+            "confidence": 0.9
+          }
+        }
+      },
+      "result_records": [
+        {
+          "dimension": "taste",
+          "attribute": "aftertaste_length",
+          "value": 7.5,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "taste",
+          "attribute": "taste_intensity",
+          "value": 7.3,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.35
+        },
+        {
+          "dimension": "taste",
+          "attribute": "balance",
+          "value": 6.5,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "taste",
+          "attribute": "body_richness",
+          "value": 6.5,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "taste",
+          "attribute": "sweetness",
+          "value": 4.3,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.35
+        },
+        {
+          "dimension": "taste",
+          "attribute": "sourness",
+          "value": 4,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.35
+        },
+        {
+          "dimension": "taste",
+          "attribute": "bitterness",
+          "value": 2.5,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "taste",
+          "attribute": "umami",
+          "value": 2,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "taste",
+          "attribute": "saltiness",
+          "value": 1,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "smell",
+          "attribute": "odor_complexity",
+          "value": 9.5,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "smell",
+          "attribute": "odor_persistence",
+          "value": 9.5,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "smell",
+          "attribute": "odor_intensity",
+          "value": 8.5,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "smell",
+          "attribute": "spicy",
+          "value": 8.3,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.35
+        },
+        {
+          "dimension": "smell",
+          "attribute": "sweet_aromatic",
+          "value": 6.7,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.35
+        },
+        {
+          "dimension": "smell",
+          "attribute": "woody",
+          "value": 6.5,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "smell",
+          "attribute": "cleanliness",
+          "value": 5.5,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "smell",
+          "attribute": "freshness",
+          "value": 4.9,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.35
+        },
+        {
+          "dimension": "smell",
+          "attribute": "floral",
+          "value": 3.3,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.35
+        },
+        {
+          "dimension": "smell",
+          "attribute": "vegetal",
+          "value": 3.3,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.35
+        },
+        {
+          "dimension": "smell",
+          "attribute": "fruity",
+          "value": 3,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.35
+        },
+        {
+          "dimension": "smell",
+          "attribute": "roasted",
+          "value": 2.5,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "smell",
+          "attribute": "mineral",
+          "value": 1,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "touch",
+          "attribute": "firmness",
+          "value": 7,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "touch",
+          "attribute": "astringency_dryness",
+          "value": 4.7,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.35
+        },
+        {
+          "dimension": "touch",
+          "attribute": "chewiness",
+          "value": 3.5,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "touch",
+          "attribute": "graininess",
+          "value": 3.5,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "touch",
+          "attribute": "crispness",
+          "value": 2,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "touch",
+          "attribute": "juiciness_moisture",
+          "value": 1,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "sight",
+          "attribute": "uniformity",
+          "value": 7,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "sight",
+          "attribute": "shape_definition",
+          "value": 6.5,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "sight",
+          "attribute": "contrast",
+          "value": 5.5,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "sight",
+          "attribute": "color_vivacity",
+          "value": 5.5,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "sight",
+          "attribute": "clarity_translucency",
+          "value": 3,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "sight",
+          "attribute": "brightness_gloss",
+          "value": 2.5,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "sound",
+          "attribute": "sound_loudness",
+          "value": 2,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "sound",
+          "attribute": "bubble_rate",
+          "value": 2,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.3
+        },
+        {
+          "dimension": "sound",
+          "attribute": "sound_crispness",
+          "value": 1.5,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "intuition",
+          "attribute": "goal_fit",
+          "value": 8.5,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "intuition",
+          "attribute": "readiness_feel",
+          "value": 7.5,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "intuition",
+          "attribute": "risk_concern",
+          "value": 2,
+          "quality": "predicted_user_reviewed",
+          "evidence_class": "ai_predicted_user_accepted",
+          "confidence": 0.9
+        }
+      ],
+      "results": {
+        "taste": {
+          "aftertaste_length": 7.5,
+          "taste_intensity": 7.3,
+          "balance": 6.5,
+          "sweetness": 4.3,
+          "sourness": 4,
+          "bitterness": 2.5,
+          "umami": 2,
+          "saltiness": 1
+        },
+        "touch": {
+          "body": 6.5,
+          "firmness": 7,
+          "astringency_dryness": 4.7,
+          "chewiness": 3.5,
+          "graininess": 3.5,
+          "crispness": 2,
+          "juiciness_moisture": 1
+        },
+        "smell": {
+          "odor_complexity": 9.5,
+          "odor_persistence": 9.5,
+          "odor_intensity": 8.5,
+          "spicy": 8.3,
+          "sweet_aromatic": 6.7,
+          "woody": 6.5,
+          "cleanliness": 5.5,
+          "freshness": 4.9,
+          "floral": 3.3,
+          "vegetal": 3.3,
+          "fruity": 3,
+          "roasted": 2.5,
+          "mineral": 1
+        },
+        "sight": {
+          "uniformity": 7,
+          "shape_definition": 6.5,
+          "contrast": 5.5,
+          "color_vibrancy": 5.5,
+          "clarity_translucency": 3,
+          "brightness_gloss": 2.5
+        },
+        "sound": {
+          "sound_loudness": 2,
+          "bubble_rate": 2,
+          "sound_crispness": 1.5
+        },
+        "intuition": {
+          "goal_fit": 8.5,
+          "readiness_feel": 7.5,
+          "risk_concern": 2
+        }
+      },
+      "measured": false,
+      "observed_by_panel": false,
+      "validation_status": "simulated_unvalidated",
+      "provenance": {
+        "assessment_mode": "predicted",
+        "evidence_origin": "model_inferred",
+        "engine": {
+          "name": "mp6r-deterministic-predictor",
+          "version": "0.2.0",
+          "prompt_version": null,
+          "model_provider": "ajinomatrix-local",
+          "model_name": "jrf-heuristic-aggregate",
+          "note": "Deterministic JRF aggregation + vocabulary heuristics. No LLM call in v0.2 runtime.",
+          "fallback_from": "model-backed",
+          "fallback_reason": "user chose Standard after AI-enhanced failure",
+          "fallback_chosen_by": "user"
+        },
+        "review": [
+          {
+            "dimension": "taste",
+            "attribute": "aftertaste_length",
+            "proposed_value": 7.5,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 7.5,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "taste",
+            "attribute": "taste_intensity",
+            "proposed_value": 7.3,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.35,
+            "decision": "accepted",
+            "accepted_value": 7.3,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "taste",
+            "attribute": "balance",
+            "proposed_value": 6.5,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 6.5,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "taste",
+            "attribute": "body_richness",
+            "proposed_value": 6.5,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 6.5,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "taste",
+            "attribute": "sweetness",
+            "proposed_value": 4.3,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.35,
+            "decision": "accepted",
+            "accepted_value": 4.3,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "taste",
+            "attribute": "sourness",
+            "proposed_value": 4,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.35,
+            "decision": "accepted",
+            "accepted_value": 4,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "taste",
+            "attribute": "bitterness",
+            "proposed_value": 2.5,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 2.5,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "taste",
+            "attribute": "umami",
+            "proposed_value": 2,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 2,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "taste",
+            "attribute": "saltiness",
+            "proposed_value": 1,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 1,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "smell",
+            "attribute": "odor_complexity",
+            "proposed_value": 9.5,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 9.5,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "smell",
+            "attribute": "odor_persistence",
+            "proposed_value": 9.5,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 9.5,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "smell",
+            "attribute": "odor_intensity",
+            "proposed_value": 8.5,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 8.5,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "smell",
+            "attribute": "spicy",
+            "proposed_value": 8.3,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.35,
+            "decision": "accepted",
+            "accepted_value": 8.3,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "smell",
+            "attribute": "sweet_aromatic",
+            "proposed_value": 6.7,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.35,
+            "decision": "accepted",
+            "accepted_value": 6.7,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "smell",
+            "attribute": "woody",
+            "proposed_value": 6.5,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 6.5,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "smell",
+            "attribute": "cleanliness",
+            "proposed_value": 5.5,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 5.5,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "smell",
+            "attribute": "freshness",
+            "proposed_value": 4.9,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.35,
+            "decision": "accepted",
+            "accepted_value": 4.9,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "smell",
+            "attribute": "floral",
+            "proposed_value": 3.3,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.35,
+            "decision": "accepted",
+            "accepted_value": 3.3,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "smell",
+            "attribute": "vegetal",
+            "proposed_value": 3.3,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.35,
+            "decision": "accepted",
+            "accepted_value": 3.3,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "smell",
+            "attribute": "fruity",
+            "proposed_value": 3,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.35,
+            "decision": "accepted",
+            "accepted_value": 3,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "smell",
+            "attribute": "roasted",
+            "proposed_value": 2.5,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 2.5,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "smell",
+            "attribute": "mineral",
+            "proposed_value": 1,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 1,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "touch",
+            "attribute": "firmness",
+            "proposed_value": 7,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 7,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "touch",
+            "attribute": "astringency_dryness",
+            "proposed_value": 4.7,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.35,
+            "decision": "accepted",
+            "accepted_value": 4.7,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "touch",
+            "attribute": "chewiness",
+            "proposed_value": 3.5,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 3.5,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "touch",
+            "attribute": "graininess",
+            "proposed_value": 3.5,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 3.5,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "touch",
+            "attribute": "crispness",
+            "proposed_value": 2,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 2,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "touch",
+            "attribute": "juiciness_moisture",
+            "proposed_value": 1,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 1,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "sight",
+            "attribute": "uniformity",
+            "proposed_value": 7,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 7,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "sight",
+            "attribute": "shape_definition",
+            "proposed_value": 6.5,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 6.5,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "sight",
+            "attribute": "contrast",
+            "proposed_value": 5.5,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 5.5,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "sight",
+            "attribute": "color_vivacity",
+            "proposed_value": 5.5,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 5.5,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "sight",
+            "attribute": "clarity_translucency",
+            "proposed_value": 3,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 3,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "sight",
+            "attribute": "brightness_gloss",
+            "proposed_value": 2.5,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 2.5,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "sound",
+            "attribute": "sound_loudness",
+            "proposed_value": 2,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 2,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "sound",
+            "attribute": "bubble_rate",
+            "proposed_value": 2,
+            "basis": "process_heuristic",
+            "confidence": 0.3,
+            "decision": "accepted",
+            "accepted_value": 2,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "sound",
+            "attribute": "sound_crispness",
+            "proposed_value": 1.5,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 1.5,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "intuition",
+            "attribute": "goal_fit",
+            "proposed_value": 8.5,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 8.5,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "intuition",
+            "attribute": "readiness_feel",
+            "proposed_value": 7.5,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 7.5,
+            "reason_code": null,
+            "reason_text": null
+          },
+          {
+            "dimension": "intuition",
+            "attribute": "risk_concern",
+            "proposed_value": 2,
+            "basis": "jrf_ingredient_sensory_aggregate",
+            "confidence": 0.9,
+            "decision": "accepted",
+            "accepted_value": 2,
+            "reason_code": null,
+            "reason_text": null
+          }
+        ]
+      }
+    }
+  ],
+  "temporal_profile": {
+    "enabled": false,
+    "model": null,
+    "method": "not_recorded",
+    "time_unit": "seconds",
+    "duration_seconds": null,
+    "phases": [],
+    "tracks": [],
+    "dominance_events": [],
+    "note": "MP6-SIM is a static predicted profile; no temporal curve was predicted in v0.2."
+  },
+  "governance": {
+    "compatibility_status": "MP6_V0.1_compatible",
+    "certification_status": "not_certified",
+    "validation_status": "panel_less_prediction_unvalidated"
+  }
+}

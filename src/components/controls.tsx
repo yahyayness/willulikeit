@@ -1,4 +1,5 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { applyPickerAccept, MAX_BYTES_DEFAULT } from "../vendor/ajx-core/index.js";
 import { ATTR_BY_ID, DIM_HEX } from "../lib/vocab";
 import type { SensoryKind, UserPreference } from "../lib/types";
 
@@ -129,11 +130,19 @@ export function PrefSlider({
 export function DropZone({ accept, title, hint, onText }: { accept: string; title: string; hint: string; onText: (text: string, name: string) => void }) {
   const ref = useRef<HTMLInputElement>(null);
   const [over, setOver] = useState(false);
+  const [readErr, setReadErr] = useState<string | null>(null);
+  // Gate 2: on touch devices `accept` is removed so native .jrf/.mp6 are selectable
+  // (Android/iOS pickers grey out unregistered extensions). Content is validated by the parsers.
+  const expect = /mp6/.test(accept) ? "mp6" : /jrf/.test(accept) ? "jrf" : "any";
+  useEffect(() => { applyPickerAccept(ref.current, expect as "mp6" | "jrf" | "any"); }, [expect]);
   const read = (f?: File | null) => {
     if (!f) return;
-    const r = new FileReader();
-    r.onload = () => onText(String(r.result ?? ""), f.name);
-    r.readAsText(f);
+    setReadErr(null);
+    if (f.size > MAX_BYTES_DEFAULT) { setReadErr("This file is too large for an AJX artifact (max 10 MB)."); return; }
+    f.text().then(
+      (t) => onText(t, f.name),
+      () => setReadErr("The file could not be read from this device. Try downloading it again, or choose another file.")
+    );
   };
   return (
     <div
@@ -155,7 +164,8 @@ export function DropZone({ accept, title, hint, onText }: { accept: string; titl
     >
       <b>{title}</b>
       <span>{hint}</span>
-      <input ref={ref} type="file" accept={accept} hidden onChange={(e) => read(e.target.files?.[0])} />
+      {readErr && <span role="alert" style={{ color: "var(--warn)" }}>{readErr}</span>}
+      <input ref={ref} type="file" accept={accept} hidden onChange={(e) => { read(e.target.files?.[0]); e.target.value = ""; }} />
     </div>
   );
 }
