@@ -2,7 +2,9 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import { App } from "./App";
 import "./styles.css";
-import { installGuard, showRecoverySurface } from "./vendor/ajx-core/index.js";
+import { installGuard, showRecoverySurface, mountStudiosBar } from "./vendor/ajx-core/index.js";
+
+mountStudiosBar({ tool: "WillULikeIT", toolId: "willulikeit", step: "predict_fit" }); // AJX Studios Gate 2 — additive frame
 
 // AJX Studios Gate 2: errors outside rendering are contained too (local only —
 // WillULikeIT sends nothing to any server).
