@@ -12,7 +12,7 @@
 // ---------------------------------------------------------------------------
 
 import { canonicalAttr } from "./vocab";
-import { evaluationRecords } from "../vendor/ajx-core/index.js";
+import { evaluationRecords, versionStatus } from "../vendor/ajx-core/index.js";
 import type { SensoryKind, SensoryProfile, SensoryValue } from "./types";
 
 export interface Mp6ParseResult {
@@ -92,6 +92,10 @@ export function parseMp6(text: string, fileName?: string, evaluationIndex = 0): 
       return { ok: false, error: 'Not an MP6 file: no "magic": "AJX-MP6" and no evaluations block. Check it at validate.mp6.app.', warnings, evaluations: [] };
     }
     warnings.push('Missing "magic": "AJX-MP6" — read defensively. Run it through validate.mp6.app.');
+  }
+  // Gate 2: a newer MP6 version is read defensively and SAID so (never silently)
+  if (data.mp6_version != null && versionStatus("mp6", String(data.mp6_version)) === "newer") {
+    warnings.push(`This MP6 declares version ${data.mp6_version}, newer than the reader (0.1) — read defensively. Check it at validate.mp6.app.`);
   }
   const evals: any[] = Array.isArray(data.evaluations) ? data.evaluations : [];
   if (!evals.length) return { ok: false, error: "The MP6 file has no evaluations — there is no sensory profile to compare against.", warnings, evaluations: [] };
