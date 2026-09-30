@@ -8,6 +8,7 @@ import { Result } from "./routes/Result";
 import { After } from "./routes/After";
 import { Log } from "./routes/Log";
 import { About } from "./routes/About";
+import { RouteBoundary } from "./components/RouteBoundary";
 
 export function App() {
   return (
@@ -76,7 +77,7 @@ function Shell() {
             ))}
           </nav>
         </header>
-        <main>{body}</main>
+        <main><RouteBoundary routeKey={r.join("/")}>{body}</RouteBoundary></main>
         <footer className="site">
           <div>
             <b>WillULikeIT</b> — experimental Ajinomatrix project with FEELLLM.org. Predictions are estimates, not validated probabilities. Everything stays in your browser unless you export it.

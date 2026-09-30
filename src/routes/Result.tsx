@@ -255,7 +255,7 @@ function BriefPanel({ fits, focus, jrf }: { fits: FitResult[]; focus: FitResult;
           className="btn primary"
           onClick={async () => {
             const ok = await copyText(md);
-            toast(ok ? <span>Brief copied — paste it into <b>FEELLLM</b> or any LLM</span> : "Copy failed — use Download instead");
+            toast(ok ? <span>Brief copied — paste it into your AI (Claude, ChatGPT, Gemini…)</span> : "Copy failed — use Download instead");
           }}
         >
           Copy brief
@@ -263,10 +263,15 @@ function BriefPanel({ fits, focus, jrf }: { fits: FitResult[]; focus: FitResult;
         <button className="btn" onClick={() => downloadText(briefFileName(focus), md)}>
           Download .md
         </button>
-        <a className="btn" href={FLOTILLA.feelllm} target="_blank" rel="noreferrer" style={{ borderColor: "var(--feel)", color: "var(--feel)" }}>
-          Open feelllm.org ↗
+        <a className="btn" href={FLOTILLA.feelllm + "/#/food"} target="_blank" rel="noreferrer" style={{ borderColor: "var(--feel)", color: "var(--feel)" }}>
+          After tasting: tell FEELLLM how it felt ↗
         </a>
       </div>
+      {/* Gate 2 (BETA-MA-003 / BETA-VINCE-002): the link lands on FEELLLM's food flow, not its home page. */}
+      <p className="tiny" style={{ marginTop: 8 }}>
+        The brief goes to any AI as your first message. FEELLLM is for afterwards: drop the same <b>.mp6</b> there and add how it actually felt.
+        Prefer no files at all? Use the <a href="https://studio.ajinomatrix.com/#/guided">AJX Studios Guided workflow</a>.
+      </p>
     </section>
   );
 }

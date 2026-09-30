@@ -68,7 +68,7 @@ function cleanDetail(event, detail) {
 }
 
 /**
- * createTelemetry({ tool, version, endpoint?, getWorkflowId?, bufferKey?, enabled? })
+ * createTelemetry({ tool, version, endpoint?, getWorkflowId?, bufferKey?, enabled?, persist? })
  * Transport: navigator.sendBeacon(endpoint) when configured; always also kept in
  * a bounded local ring buffer (inspectable via .buffer()). Never blocks the UI.
  */
@@ -80,8 +80,12 @@ export function createTelemetry(opts = {}) {
   let enabled = opts.enabled !== false;
   const sessionId = "s_" + Math.random().toString(36).slice(2, 12);
   const started = Date.now();
+  const mem = [];
+  const keep = opts.persist !== false; // persist:false → memory only (nothing written to storage)
 
   function persist(evt) {
+    mem.push(evt); if (mem.length > cap) mem.shift();
+    if (!keep) return;
     try {
       const raw = window.localStorage.getItem(bufferKey);
       const arr = raw ? JSON.parse(raw) : [];
@@ -122,8 +126,8 @@ export function createTelemetry(opts = {}) {
 
   return {
     track,
-    buffer() { try { return JSON.parse(window.localStorage.getItem(bufferKey) || "[]"); } catch { return []; } },
-    clear() { try { window.localStorage.removeItem(bufferKey); } catch { /* */ } },
+    buffer() { if (!keep) return mem.slice(); try { return JSON.parse(window.localStorage.getItem(bufferKey) || "[]"); } catch { return mem.slice(); } },
+    clear() { mem.length = 0; try { if (keep) window.localStorage.removeItem(bufferKey); } catch { /* */ } },
     setEnabled(v) { enabled = !!v; },
     get enabled() { return enabled; }
   };

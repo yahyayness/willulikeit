@@ -88,7 +88,7 @@ export interface Telemetry {
   track(event: string, opts?: { step?: string | null; provenance_mode?: string | null; duration_ms?: number | null; detail?: Record<string, unknown> }): any;
   buffer(): any[]; clear(): void; setEnabled(v: boolean): void; readonly enabled: boolean;
 }
-export declare function createTelemetry(opts?: { tool?: string; version?: string; endpoint?: string; getWorkflowId?: () => string | null; bufferKey?: string; cap?: number; enabled?: boolean }): Telemetry;
+export declare function createTelemetry(opts?: { tool?: string; version?: string; endpoint?: string; getWorkflowId?: () => string | null; bufferKey?: string; cap?: number; enabled?: boolean; persist?: boolean }): Telemetry;
 export declare function validateTelemetryEvent(evt: unknown): { ok: boolean; reason?: string; event?: any };
 
 // ---- studios bar ----

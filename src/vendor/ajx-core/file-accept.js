@@ -122,7 +122,7 @@ export function acceptText(text, opts = {}) {
     return { ...res, ok: false, errorCode: "wrong_kind", error: `That file doesn't look like ${want} (detected: ${got}).${hint}` };
   }
   if (vs === "newer") {
-    return { ...res, ok: false, errorCode: "newer_version", error: `This ${LABEL[id.kind]} file was made by a newer tool (version ${id.version}). This tool reads version ${supportedLabel(id.kind)}. Open it in the Validator, or update the tool.` };
+    return { ...res, ok: false, errorCode: "newer_version", error: `This ${LABEL[id.kind]} file was made by a newer tool (version ${id.version}). This tool reads version ${supportedLabel(id.kind)}. ${id.kind === "jrf" ? "Open it in JRF Studio (jrf.recipes)" : "Check it in the MP6 Validator (validate.mp6.app)"}, or use the newer tool.` };
   }
   if (vs === "unknown" && (id.kind === "jrf" || id.kind === "mp6")) res.warnings.push(`No ${id.kind === "jrf" ? "version" : "mp6_version"} field — read defensively.`);
   return res;
